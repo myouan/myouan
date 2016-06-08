@@ -5,9 +5,8 @@
 nodeJS が必要です。
 
 ```
-$ npm npm install -g gulp-cli
 $ npm install
-$ gulp build
+$ npm run gulp build
 ```
 
 ## gulp
@@ -15,7 +14,7 @@ $ gulp build
 ### WEBサーバーの立ち上げ。ファイルの監視・自動ビルド。
 
 ```
-$ gulp
+$ npm run gulp
 ```
 
 Open [http://localhost:3000](http://localhost:3000) !
@@ -23,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) !
 ### ビルドのみ実行
 
 ```
-$ gulp build
+$ npm run gulp build
 ```
 
 ## コーディング基準

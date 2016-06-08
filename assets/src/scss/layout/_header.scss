@@ -1,0 +1,45 @@
+.l-header {
+	/**
+	 * logo left
+	 */
+	&--logo-left {
+		@include wpbook-bp-md-min() {
+			> .container {
+				display: table;
+
+				> * {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+
+			.p-site-branding {
+				padding-right: $wpbook-base-line-height;
+			}
+
+			.p-site-description {
+			}
+
+			.p-site-action {
+				padding-left: $wpbook-base-line-height;
+				width: 1%;
+			}
+		}
+	}
+
+	/**
+	 * 1row
+	 */
+	&--1row {
+		@include wpbook-bp-md-min() {
+			> .container {
+				display: table;
+
+				> * {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

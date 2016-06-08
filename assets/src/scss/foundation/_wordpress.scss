@@ -1,0 +1,116 @@
+/**
+ * .wp-caption
+ */
+.wp-caption {
+	border: none;
+	text-align: left;
+	background-color: transparent;
+	padding: 0;
+	margin: 0 0 $wpbook-base-line-height;
+	border-radius: 0;
+	max-width: 100%;
+
+	&-text {
+		color: $wpbook-color-gray;
+		margin-top: 5px;
+		font-size: ($wpbook-base-font-size - 2px);
+		line-height: 1.4;
+	}
+}
+
+/**
+ * alignment
+ */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $wpbook-base-font-size;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $wpbook-base-font-size;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+ * .bypostauthor
+ */
+.bypostauthor {
+}
+
+/**
+ * Galleries
+ */
+.gallery {
+	margin: 0 0 ($wpbook-base-line-height / 2);
+
+	&-item {
+		display: inline-block;
+		padding: 1.79104477%;
+		text-align: center;
+		vertical-align: top;
+		width: 100%;
+
+		@for $i from 2 through 9 {
+			.gallery-columns-#{$i} & {
+				max-width: percentage( 1 / $i );
+			}
+		}
+	}
+
+	&-icon {
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	&-caption {
+		display: block;
+
+		.gallery-columns-6 &,
+		.gallery-columns-7 &,
+		.gallery-columns-8 &,
+		.gallery-columns-9 & {
+			display: none;
+		}
+	}
+}
+
+/**
+ * Screen reader text
+ */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000;
+	}
+}

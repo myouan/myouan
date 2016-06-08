@@ -1,0 +1,10 @@
+$wpbook-bp-xs-min: 0;
+
+$wpbook-bp-sm-min: 768px;
+$wpbook-bp-xs-max: ($wpbook-bp-sm-min - 1);
+
+$wpbook-bp-md-min: 992px;
+$wpbook-bp-sm-max: ($wpbook-bp-md-min - 1);
+
+$wpbook-bp-lg-min: 1200px;
+$wpbook-bp-md-max: ($wpbook-bp-lg-min - 1);

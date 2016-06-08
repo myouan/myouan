@@ -1,0 +1,99 @@
+//
+// Return min-width media query
+//
+// @param	length	$min	width
+//
+@mixin wpbook-bp-min( $min ) {
+	@if ( $min == $wpbook-bp-sm-min ) {
+		@content;
+	} @else {
+		@media ( min-width: $min ) {
+			@content;
+		}
+	}
+}
+
+//
+// Return max-width media query
+//
+// @param	length	$max	width
+//
+@mixin wpbook-bp-max( $max ) {
+	@media ( max-width: $max ) {
+		@content;
+	}
+}
+
+//
+// Return $wpbook-bp-sm-min media query
+//
+@mixin wpbook-bp-sm-min() {
+	@include wpbook-bp-min( $wpbook-bp-sm-min ) {
+		@content;
+	}
+}
+
+//
+// Return $wpbook-bp-sm-max media query
+//
+@mixin wpbook-bp-sm-max() {
+	@include wpbook-bp-min( $wpbook-bp-sm-max ) {
+		@content;
+	}
+}
+
+//
+// Return $wpbook-bp-md-min media query
+//
+@mixin wpbook-bp-md-min() {
+	@include wpbook-bp-min( $wpbook-bp-md-min ) {
+		@content;
+	}
+}
+
+//
+// Return $wpbook-bp-md-max media query
+//
+@mixin wpbook-bp-md-max() {
+	@include wpbook-bp-min( $wpbook-bp-md-max ) {
+		@content;
+	}
+}
+
+//
+// Return media query for smartphone size
+//
+@mixin wpbook-bp-xs-only() {
+	@include wpbook-bp-max( $wpbook-bp-xs-max ) {
+		@content;
+	}
+}
+
+//
+// Return media query for tablet size
+//
+@mixin wpbook-bp-sm-only() {
+	@media ( min-width: $wpbook-bp-sm-min ) and ( max-width: $wpbook-bp-sm-max ) {
+		@content;
+	}
+}
+
+//
+// Return media query for pc size
+//
+@mixin wpbook-bp-md-only() {
+	@media ( min-width: $wpbook-bp-md-min ) and ( max-width: $wpbook-bp-md-max ) {
+		@content;
+	}
+}
+
+//
+// Return media query for large pc size
+//
+// @return	string	media query
+//
+@mixin wpbook-bp-lg-only() {
+	@include wpbook-bp-min( $wpbook-bp-lg-min ) {
+		@content;
+	}
+}

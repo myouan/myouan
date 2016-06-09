@@ -33,8 +33,11 @@ if ( class_exists( 'SCF' ) ) {
 		}
 	}
 }
+
+if ( ! $points ) {
+	return;
+}
 ?>
-<?php if ( $points ) : ?>
 <section class="p-3points c-section">
 	<div class="container">
 			<div class="row">
@@ -60,4 +63,3 @@ if ( class_exists( 'SCF' ) ) {
 			</div>
 	</div>
 </section>
-<?php endif; ?>

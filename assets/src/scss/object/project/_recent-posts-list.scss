@@ -1,11 +1,13 @@
 .p-recent-posts-list {
-	@include wpbook-bp-md-min() {
-		> .container {
+	> .container {
+		@include wpbook-bp-md-min() {
 			display: table;
 			table-layout: fixed;
 		}
+	}
 
-		&__item {
+	&__item {
+		@include wpbook-bp-md-min() {
 			display: table-cell;
 			width: 100%;
 			padding: 0 15px;

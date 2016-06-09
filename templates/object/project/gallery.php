@@ -11,8 +11,11 @@ for ( $i = 1; $i <= 4; $i ++ ) {
 		$gallery[] = $image_url;
 	}
 }
+
+if ( ! $gallery ) {
+	return;
+}
 ?>
-<?php if ( $gallery ) : ?>
 <section class="p-gallery c-section">
 	<ul class="p-gallery__list">
 		<?php foreach ( $gallery as $image_url ) : ?>
@@ -20,4 +23,3 @@ for ( $i = 1; $i <= 4; $i ++ ) {
 		<?php endforeach; ?>
 	</ul>
 </section>
-<?php endif; ?>

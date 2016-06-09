@@ -1,4 +1,8 @@
-<?php if ( is_active_sidebar( 'front-page-top' ) ) : ?>
+<?php
+if ( ! is_active_sidebar( 'front-page-top' ) ) {
+	return;
+}
+?>
 <div class="p-front-page-widget-area c-section">
 	<div class="container">
 		<div class="row">
@@ -8,4 +12,3 @@
 		</div>
 	</div>
 </div>
-<?php endif; ?>

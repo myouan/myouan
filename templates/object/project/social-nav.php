@@ -1,4 +1,8 @@
-<?php if ( has_nav_menu( 'social-nav' ) ) : ?>
+<?php
+if ( ! has_nav_menu( 'social-nav' ) ) {
+	return;
+}
+?>
 <div class="p-social-nav">
 	<div class="container">
 		<?php
@@ -10,4 +14,3 @@
 		?>
 	</div>
 </div>
-<?php endif; ?>

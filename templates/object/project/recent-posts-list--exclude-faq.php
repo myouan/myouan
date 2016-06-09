@@ -12,12 +12,6 @@
 		$recent_post_types = array_merge( $recent_post_types, array(
 			'post' => __( 'ブログ', 'wpbook' ),
 		) );
-
-		if ( post_type_exists( 'faq' ) ) {
-			$recent_post_types = array_merge( $recent_post_types, array(
-				'faq' => __( 'よくあるご質問', 'wpbook' ),
-			) );
-		}
 		?>
 		<?php foreach ( $recent_post_types as $post_type => $label ) : ?>
 		<div class="p-recent-posts-list__item">

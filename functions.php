@@ -1,5 +1,6 @@
 <?php
 include_once( get_template_directory() . '/vendor/smart-custom-fields.php' );
+include_once( get_template_directory() . '/functions/template-tags.php' );
 
 if ( ! function_exists( 'wpbook_setup' ) ) {
 	/**
@@ -202,7 +203,7 @@ function wpbook_register_post_types() {
 				'public'      => true,
 				'has_archive' => true,
 				'supports'    => array(
-					'title', 'editor', 'excerpt', 'author', 'thumbnail',
+					'title', 'editor', 'author',
 				),
 			)
 		);

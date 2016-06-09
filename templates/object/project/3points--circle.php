@@ -12,7 +12,7 @@ if ( ! $points ) {
 				<div class="col-md-4">
 					<div class="p-3points__item">
 						<?php if ( !empty( $point['image'] ) ) : ?>
-						<div class="p-3points__thumbnail" style="background-image: url(<?php echo esc_url( $point['image'] ); ?>);"></div>
+						<div class="p-3points__thumbnail p-3points__thumbnail--circle" style="background-image: url(<?php echo esc_url( $point['image'] ); ?>);"></div>
 						<?php endif; ?>
 						<?php if ( !empty( $point['description'] ) ) : ?>
 						<div class="p-3points__description">

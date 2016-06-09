@@ -9,5 +9,13 @@
 			display: block;
 			padding-top: 75%;
 		}
+
+		&--circle {
+			border-radius: 100%;
+
+			&::before {
+				padding-top: 100%;
+			}
+		}
 	}
 }

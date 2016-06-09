@@ -35,7 +35,7 @@ if ( class_exists( 'SCF' ) ) {
 }
 ?>
 <?php if ( $points ) : ?>
-<section class="p-3points">
+<section class="p-3points c-section">
 	<div class="container">
 			<div class="row">
 				<?php foreach ( $points as $point ) : ?>

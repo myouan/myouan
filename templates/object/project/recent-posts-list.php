@@ -1,4 +1,4 @@
-<section class="p-recent-posts-list">
+<section class="p-recent-posts-list c-section">
 	<div class="container">
 		<?php
 		$recent_post_types = array(

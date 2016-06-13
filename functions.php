@@ -276,6 +276,14 @@ function wpbook_wp_enqueue_scripts() {
 	);
 
 	wp_enqueue_script(
+		'masonry',
+		get_template_directory_uri() . '/assets/vendor/masonry.pkgd.min.js',
+		array( 'jquery' ),
+		$version,
+		true
+	);
+
+	wp_enqueue_script(
 		get_template(),
 		get_template_directory_uri() . '/assets/js/app.min.js',
 		array( 'bootstrap' ),

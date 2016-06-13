@@ -15,15 +15,15 @@ SCF::add_options_page(
 );
 
 /**
- * Register custom fields
+ * Register custom fields for option page
  *
  * @param array  $settings
  * @param string $type
- * @param int    $id
+ * @param string $id
  * @param string $meta_type
  * @return array
  */
-function register_fields( $settings, $type, $id, $meta_type ) {
+function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	if ( $id !== 'theme-option' ) {
 		return $settings;
 	}
@@ -211,4 +211,35 @@ function register_fields( $settings, $type, $id, $meta_type ) {
 
 	return $settings;
 }
-add_filter( 'smart-cf-register-fields', 'register_fields', 10, 4 );
+add_filter( 'smart-cf-register-fields', 'register_fields_for_option_page', 10, 4 );
+
+/**
+ * Register custom fields for item
+ *
+ * @param array  $settings
+ * @param string $type
+ * @param string $id
+ * @param string $meta_type
+ * @return array
+ */
+function register_fields_for_item( $settings, $type, $id, $meta_type ) {
+	if ( $type !== 'item' || $meta_type !== 'post' ) {
+		return $settings;
+	}
+
+	/**
+	 * color setting
+	 */
+	$Setting = SCF::add_setting( 'item-setting', __( '商品設定', 'wpbook' ) );
+	$Setting->add_group( 'group-url', false, array(
+		array(
+			'name'  => 'url',
+			'label' => __( 'カートURL', 'wpbook' ),
+			'type'  => 'text',
+		),
+	) );
+	$settings[] = $Setting;
+
+	return $settings;
+}
+add_filter( 'smart-cf-register-fields', 'register_fields_for_item', 10, 4 );

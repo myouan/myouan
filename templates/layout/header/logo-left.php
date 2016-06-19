@@ -16,7 +16,7 @@
 			?>
 			<?php if ( $header_btn_text ) : ?>
 			<div class="p-site-action">
-				<a class="btn btn-primary" href="<?php echo esc_url( $header_btn_url ); ?>"><?php echo esc_html( $header_btn_text ); ?></a>
+				<a class="btn btn-primary btn-block" href="<?php echo esc_url( $header_btn_url ); ?>"><?php echo esc_html( $header_btn_text ); ?></a>
 			</div>
 			<?php endif; ?>
 		<?php endif; ?>

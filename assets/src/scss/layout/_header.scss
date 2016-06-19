@@ -1,8 +1,17 @@
 .l-header {
+
 	/**
 	 * logo left
 	 */
 	&--logo-left {
+		.p-site-branding {
+			padding: ( $wpbook-base-line-height / 2 ) $wpbook-base-line-height ( $wpbook-base-line-height / 2 ) 0;
+		}
+
+		.p-site-action {
+			padding: ( $wpbook-base-line-height / 2 ) 0 ( $wpbook-base-line-height / 2 ) 0;
+		}
+
 		@include wpbook-bp-md-min() {
 			> .container {
 				display: table;
@@ -13,17 +22,26 @@
 				}
 			}
 
-			.p-site-branding {
-				padding-right: $wpbook-base-line-height;
-			}
-
 			.p-site-description {
 			}
 
 			.p-site-action {
 				padding-left: $wpbook-base-line-height;
+			}
+
+			.p-site-action {
 				width: 1%;
 			}
+		}
+	}
+
+	/**
+	 * logo center
+	 */
+	&--logo-center {
+		.p-site-branding {
+			padding: ( $wpbook-base-line-height / 2 ) 0;
+			text-align: center;
 		}
 	}
 
@@ -31,6 +49,10 @@
 	 * 1row
 	 */
 	&--1row {
+		.p-site-branding {
+			padding: ( $wpbook-base-line-height / 2 ) 0;
+		}
+
 		@include wpbook-bp-md-min() {
 			> .container {
 				display: table;

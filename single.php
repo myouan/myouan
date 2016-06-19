@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part( 'templates/object/project/page-header' ); ?>
+
 <div class="container">
 	<?php
 	while ( have_posts() ) {

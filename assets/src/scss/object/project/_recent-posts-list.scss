@@ -7,6 +7,12 @@
 	}
 
 	&__item {
+		margin-bottom: $wpbook-base-line-height;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		@include wpbook-bp-md-min() {
 			display: table-cell;
 			width: 100%;

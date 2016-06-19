@@ -1,0 +1,37 @@
+.p-recent-item-masonry {
+	&__list {
+		@include wpbook-clearfix();
+		list-style: none;
+		margin: 0 -15px;
+		padding: 0;
+	}
+
+	&__item {
+		padding: 15px;
+		padding: 0;
+
+		@include wpbook-bp-md-min() {
+			float: left;
+			width: 25%;
+		}
+
+		> a {
+			display: block;
+			color: $wpbook-color-text;
+			padding: 15px 15px 0;
+			text-decoration: none;
+		}
+	}
+
+	&__thumbnail {
+		> img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	&__cart {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+}

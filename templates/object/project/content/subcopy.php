@@ -12,4 +12,4 @@ if ( ! $subcopy ) {
 
 <div class="p-content__subcopy">
 	<?php echo esc_html( $subcopy ); ?>
-</dv>
+</div>

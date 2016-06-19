@@ -11,6 +11,9 @@
 	?>
 </div>
 
+<?php get_template_part( 'templates/object/project/front-page-widget-area--bottom' ); ?>
+<?php get_template_part( 'templates/object/project/social-nav' ); ?>
+
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

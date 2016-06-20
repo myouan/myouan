@@ -45,3 +45,35 @@ function wpbook_get_3points() {
 
 	return $points;
 }
+
+/**
+ * Getting base font setting stylesheet
+ *
+ * @param string
+ */
+function wpbook_get_base_font_stylsheet() {
+	if ( ! class_exists( 'SCF' ) ) {
+		return;
+	}
+	if ( SCF::get_option_meta( 'theme-option', 'base-font' ) === 'serif' ) {
+		return get_template_directory_uri() . '/assets/theme-option/base-font/serif.css';
+	} else {
+		return get_template_directory_uri() . '/assets/theme-option/base-font/sans-serif.css';
+	}
+}
+
+/**
+ * Getting heading font setting stylesheet
+ *
+ * @param string
+ */
+function wpbook_get_heading_font_stylsheet() {
+	if ( ! class_exists( 'SCF' ) ) {
+		return;
+	}
+	if ( SCF::get_option_meta( 'theme-option', 'heading-font' ) === 'serif' ) {
+		return get_template_directory_uri() . '/assets/theme-option/heading-font/serif.css';
+	} else {
+		return get_template_directory_uri() . '/assets/theme-option/heading-font/sans-serif.css';
+	}
+}

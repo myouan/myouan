@@ -1,8 +1,29 @@
-.l-header {
+@mixin header_shadow() {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
 
-	/**
-	 * logo left
-	 */
+.l-header {
+	background-color: #fff;
+	@include header_shadow();
+	transition: background-color .2s;
+
+	@include wpbook-bp-md-min() {
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&--overlay {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&--is-scrolled {
+		background-color: #fff;
+		@include header_shadow();
+	}
+
 	&--logo-left {
 		.p-site-branding {
 			padding: ( $wpbook-base-line-height / 2 ) $wpbook-base-line-height ( $wpbook-base-line-height / 2 ) 0;
@@ -35,9 +56,6 @@
 		}
 	}
 
-	/**
-	 * logo center
-	 */
 	&--logo-center {
 		.p-site-branding {
 			padding: ( $wpbook-base-line-height / 2 ) 0;
@@ -45,9 +63,6 @@
 		}
 	}
 
-	/**
-	 * 1row
-	 */
 	&--1row {
 		.p-site-branding {
 			padding: ( $wpbook-base-line-height / 2 ) 0;

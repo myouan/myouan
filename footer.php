@@ -1,5 +1,3 @@
-	</div>
-
 	<footer id="footer" class="l-footer">
 		<?php if ( is_active_sidebar( 'footer' ) ) : ?>
 		<div class="widgets-footer">
@@ -17,7 +15,7 @@
 			</div>
 		</div>
 	</footer>
-
-	<?php wp_footer(); ?>
+</div>
+<?php wp_footer(); ?>
 </body>
 </html>

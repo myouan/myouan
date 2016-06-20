@@ -1,19 +1,23 @@
 <?php get_header(); ?>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-9">
-			<ul class="p-entries">
-				<?php
-				while ( have_posts() ) {
-					the_post();
-					get_template_part( 'templates/content/content' );
-				}
-				?>
-			</ul>
-		</div>
-		<div class="col-md-3">
-			<?php get_sidebar(); ?>
+<div id="contents" class="l-contents">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<main id="main" role="main">
+					<ul class="p-entries">
+						<?php
+						while ( have_posts() ) {
+							the_post();
+							get_template_part( 'templates/content/content' );
+						}
+						?>
+					</ul>
+				</main>
+			</div>
+			<div class="col-md-3">
+				<?php get_sidebar(); ?>
+			</div>
 		</div>
 	</div>
 </div>

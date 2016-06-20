@@ -1,10 +1,43 @@
 jQuery( function( $ ) {
 
 	/**
+	 * Sticky header
+	 */
+	( function() {
+		var header   = $( '.l-header' );
+		var contents = $( '.l-contents' );
+
+		sticky_header();
+		$( window ).resize( function() {
+			sticky_header();
+		} );
+
+		$( window ).scroll( function() {
+			var scroll = $( this ).scrollTop();
+			if ( scroll ) {
+				header.addClass( 'l-header--is-scrolled' );
+			} else {
+				header.removeClass( 'l-header--is-scrolled' );
+			}
+		} );
+
+		function sticky_header() {
+			if ( header.hasClass( 'l-header--overlay' ) ) {
+				return;
+			}
+			var position = header.css( 'position' );
+			if ( position === 'fixed' ) {
+				contents.css( 'padding-top', header.outerHeight() );
+			} else {
+				contents.css( 'padding-top', '' );
+			}
+		}
+	} )();
+
+	/**
 	 * masonry
 	 */
 	( function() {
-
 		exec_masonry(
 			$( '.p-recent-news-masonry__list' ),
 			{

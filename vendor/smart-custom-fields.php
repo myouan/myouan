@@ -108,6 +108,7 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 				'logo-left'   => __( '【2段レイアウト】ロゴ左 + サイト説明 + ヘッダーボタン', 'wpbook' ),
 				'logo-center' => __( '【2段レイアウト】ロゴ中央', 'wpbook' ),
 				'1row'        => __( '【1段レイアウト】ロゴ＋メニュー横並び', 'wpbook' ),
+				'overlay'     => __( '【1段レイアウト】ロゴ＋メニュー横並び、トップページのみオーバレイ', 'wpbook' ),
 			),
 			'default' => 'logo-left',
 			'radio_direction'  => 'vertical',

@@ -239,6 +239,25 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	) );
 	$settings[] = $Setting;
 
+	/**
+	 * archive page layout
+	 */
+	$Setting = SCF::add_setting( 'archive-page-layout', __( 'アーカイブページレイアウト', 'wpbook' ) );
+	$Setting->add_group( 'group-archive-page-layout', false, array(
+		array(
+			'name'  => 'archive-page-layout',
+			'label' => __( 'アーカイブページレイアウト', 'wpbook' ),
+			'type'  => 'radio',
+			'choices' => array(
+				'thumbnail'    => __( 'サムネイルあり', 'wpbook' ),
+				'no-thumbnail' => __( 'サムネイルなし', 'wpbook' ),
+				'only-title'   => __( 'タイトルのみ', 'wpbook' ),
+			),
+			'default' => 'thumbnail',
+		),
+	) );
+	$settings[] = $Setting;
+
 	return $settings;
 }
 add_filter( 'smart-cf-register-fields', 'register_fields_for_option_page', 10, 4 );

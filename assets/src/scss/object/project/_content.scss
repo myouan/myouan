@@ -7,26 +7,15 @@
 		padding: $wpbook-base-font-size;
 	}
 
-	&__title {
-		@include wpbook-font-size-line-height( $wpbook-base-font-size * 2 );
-		margin: 0 0 $wpbook-base-line-height;
-	}
-
 	&__entry-meta {
 		margin: 0 0 $wpbook-base-line-height;
 		border-top: 1px solid #ddd;
-		padding-top: $wpbook-base-font-size;
+		padding: $wpbook-base-font-size 0 0;
+	}
 
-		> ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-
-			> li {
-				display: inline-block;
-				margin: 0 $wpbook-base-font-size 0 0;
-			}
-		}
+	&__title {
+		@include wpbook-font-size-line-height( $wpbook-base-font-size * 2 );
+		margin: 0 0 $wpbook-base-font-size;
 	}
 
 	&__excerpt {

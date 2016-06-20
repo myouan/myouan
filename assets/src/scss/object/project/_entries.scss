@@ -1,0 +1,29 @@
+.p-entries {
+	list-style: none;
+	margin: 0;
+	border-top: 1px solid #ddd;
+	padding: $wpbook-base-line-height 0 0;
+
+	&__item {
+		border-bottom: 1px solid #ddd;
+		margin: 0 0 $wpbook-base-line-height;
+		padding: 0 0 $wpbook-base-line-height;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		@include wpbook-font-size-line-height( $wpbook-base-font-size * 2 );
+		font-weight: bold;
+		margin: 0 0 $wpbook-base-line-height;
+	}
+
+	&__body {
+		margin: 0 0 $wpbook-base-line-height;
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+}

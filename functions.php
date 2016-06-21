@@ -323,27 +323,6 @@ function wpbook_wp_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'wpbook_wp_enqueue_scripts' );
 
 /**
- * Added styles by theme-option settings
- */
-/*
-function wpbook_theme_option_stles() {
-	if ( SCF::get_option_meta( 'theme-option', 'base-font' ) === 'serif' ) {
-		$font = '"Roboto", "Droid Sans", "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;';
-	} else {
-		$font = '"Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;';
-	}
-	?>
-<style>
-body {
-	font-family: <?php echo $font; ?>
-}
-</style>
-	<?php
-}
-add_action( 'wp_head', 'wpbook_theme_option_stles' );
-*/
-
-/**
  * Output hentry class  when the single page only
  *
  * @param array $classes

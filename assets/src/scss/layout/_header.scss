@@ -3,7 +3,6 @@
 }
 
 .l-header {
-	position: relative;
 	background-color: #fff;
 	@include header_shadow();
 	transition: background-color .2s;
@@ -13,6 +12,14 @@
 		right: 0;
 		left: 0;
 		z-index: 1;
+	}
+
+	> .container {
+		position: relative;
+	}
+
+	.p-mobile-nav {
+		margin-bottom: $wpbook-base-line-height;
 	}
 
 	.c-hamburger-btn {

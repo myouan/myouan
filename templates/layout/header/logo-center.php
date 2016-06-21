@@ -9,6 +9,13 @@
 
 	<div class="container">
 		<?php get_template_part( 'templates/object/project/site-branding' ); ?>
+
+		<?php if ( has_nav_menu( 'global-nav' ) ) : ?>
+		<div class="hidden-md hidden-lg">
+			<?php get_template_part( 'templates/object/component/hamburger-btn' ); ?>
+			<?php get_template_part( 'templates/object/project/drawer-nav' ); ?>
+		</div>
+		<?php endif; ?>
 	</div>
 
 	<?php if ( has_nav_menu( 'global-nav' ) ) : ?>
@@ -17,8 +24,7 @@
 			<?php get_template_part( 'templates/object/project/global-nav' ); ?>
 		</div>
 	</nav>
-	<div class="hidden-md hidden-lg">
-		<?php get_template_part( 'templates/object/component/hamburger-btn' ); ?>
-	</div>
 	<?php endif; ?>
+
+	<?php get_template_part( 'templates/object/project/mobile-nav' ); ?>
 </header>

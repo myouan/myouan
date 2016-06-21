@@ -22,4 +22,6 @@
 		</div>
 		<?php endif; ?>
 	</div>
+
+	<?php get_template_part( 'templates/object/project/mobile-nav' ); ?>
 </header>

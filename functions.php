@@ -1,5 +1,6 @@
 <?php
 include_once( get_template_directory() . '/vendor/smart-custom-fields.php' );
+include_once( get_template_directory() . '/vendor/class-tgm-plugin-activation.php' );
 include_once( get_template_directory() . '/functions/template-tags.php' );
 
 if ( ! function_exists( 'wpbook_setup' ) ) {
@@ -91,6 +92,38 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 		 * Added excerpt in page.
 		 */
 		add_post_type_support( 'page', 'excerpt' );
+
+		/**
+		 * Register the required plugins for this theme.
+		 */
+		function wpbook_register_required_plugins() {
+			$plugins = array(
+				array(
+					'name'     => 'Smart Custom Fields',
+					'slug'     => 'smart-custom-fields',
+					'required' => true,
+				),
+				array(
+					'name'     => 'MW WP Form',
+					'slug'     => 'mw-wp-form',
+					'required' => false,
+				),
+				array(
+					'name'     => 'WP-PageNavi',
+					'slug'     => 'wp-pagenavi',
+					'required' => false,
+				),
+			);
+
+			$config = array(
+				'id'           => 'wpbook',
+				'has_notices'  => true,
+				'dismissable'  => true,
+				'is_automatic' => true,
+			);
+			tgmpa( $plugins, $config );
+		}
+		add_action( 'tgmpa_register', 'wpbook_register_required_plugins' );
 	}
 }
 add_action( 'after_setup_theme', 'wpbook_setup' );

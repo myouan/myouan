@@ -3,7 +3,6 @@
 
 	<h1 class="p-content__title"><?php the_title(); ?></h1>
 
-	<?php get_template_part( 'templates/object/project/entry-meta' ); ?>
 	<?php get_template_part( 'templates/object/project/content/excerpt' ); ?>
 
 	<div class="p-content__body">

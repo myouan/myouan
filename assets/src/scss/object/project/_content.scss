@@ -2,7 +2,7 @@
 	margin: 0 0 $wpbook-base-line-height;
 
 	&__subcopy {
-		margin: 0 0 $wpbook-base-line-height;
+		margin: 0 0 ( $wpbook-base-line-height / 2 );
 		background-color: #eee;
 		padding: $wpbook-base-font-size;
 	}

@@ -1,4 +1,19 @@
 .p-3points {
+
+	&__item {
+		margin-bottom: $wpbook-base-line-height;
+
+		@include wpbook-bp-md-min() {
+			margin-bottom: 0;
+		}
+	}
+
+	[class^="col-"]:last-child {
+		.p-3points__item {
+			margin-bottom: 0;
+		}
+	}
+
 	&__thumbnail {
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
@@ -17,5 +32,9 @@
 				padding-top: 100%;
 			}
 		}
+	}
+
+	&__link {
+		margin-top: ( $wpbook-base-line-height / 2 );
 	}
 }

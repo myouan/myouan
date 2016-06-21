@@ -1,0 +1,54 @@
+$wpbook-hamburger-btn-height: 16px;
+$wpbook-hamburger-btn-width: 22px;
+$wpbook-hamburger-btn-bar-height: 2px;
+$wpbook-hamburger-btn-padding: 5px;
+
+.c-hamburger-btn {
+	position: relative;
+	display: inline-block;
+	box-sizing: content-box;
+	height: $wpbook-hamburger-btn-height;
+	width: $wpbook-hamburger-btn-width;
+	padding: $wpbook-hamburger-btn-padding;
+	cursor: pointer;
+
+	&__bar {
+		position: absolute;
+		right: $wpbook-hamburger-btn-padding;
+		left: $wpbook-hamburger-btn-padding;
+		display: block;
+		height: $wpbook-hamburger-btn-bar-height;
+		background-color: #333;
+		transition: transform .1s, background-color;
+
+		&:nth-child(1) {
+			top: $wpbook-hamburger-btn-padding;
+		}
+
+		&:nth-child(2) {
+			top: ($wpbook-hamburger-btn-height / 2 - $wpbook-hamburger-btn-bar-height / 2) + $wpbook-hamburger-btn-padding;
+		}
+
+		&:nth-child(3) {
+			top: ($wpbook-hamburger-btn-height - $wpbook-hamburger-btn-bar-height) + $wpbook-hamburger-btn-padding;
+		}
+
+		.is-close > & {
+			&:nth-child(1), &:nth-child(3) {
+				top: ($wpbook-hamburger-btn-height / 2 - $wpbook-hamburger-btn-bar-height / 2) + $wpbook-hamburger-btn-padding;
+			}
+
+			&:nth-child(1) {
+				transform: rotate(45deg);
+			}
+
+			&:nth-child(2) {
+				background-color: transparent;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

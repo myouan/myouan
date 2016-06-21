@@ -9,7 +9,7 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class( 'c-drawer' ); ?>>
 <div id="container" class="l-container">
 	<?php
 	if ( class_exists( 'SCF' ) ) {

@@ -5,6 +5,7 @@ var cssnano      = require( 'cssnano' );
 var rename       = require( 'gulp-rename' );
 var uglify       = require( 'gulp-uglify' );
 var browserify   = require( 'browserify' );
+var babelify     = require( 'babelify' );
 var source       = require( 'vinyl-source-stream' );
 var browser_sync = require( 'browser-sync' );
 var autoprefixer = require( 'autoprefixer' );
@@ -37,6 +38,7 @@ gulp.task( 'sass', function() {
 
 gulp.task( 'browserify', function() {
 	return browserify( dir.src.js )
+		.transform( 'babelify', { presets: ['es2015'] } )
 		.transform( 'browserify-shim' )
 		.bundle()
 		.pipe( source( 'app.js' ) )

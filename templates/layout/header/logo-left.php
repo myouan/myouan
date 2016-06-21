@@ -29,4 +29,10 @@
 		</div>
 	</nav>
 	<?php endif; ?>
+
+	<?php if ( has_nav_menu( 'global-nav' ) ) : ?>
+	<div class="hidden-md hidden-lg">
+		<?php get_template_part( 'templates/object/component/hamburger-btn' ); ?>
+	</div>
+	<?php endif; ?>
 </header>

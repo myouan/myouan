@@ -17,7 +17,7 @@ export default class StickyHeader {
 		} );
 
 		$( window ).scroll( () => {
-			const scroll = $( this ).scrollTop();
+			const scroll = $( window ).scrollTop();
 			if ( scroll ) {
 				this.header.addClass( 'l-header--is-scrolled' );
 			} else {

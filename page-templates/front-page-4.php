@@ -11,7 +11,7 @@
 		<?php get_template_part( 'templates/object/project/front-page-widget-area--top' ); ?>
 		<?php get_template_part( 'templates/object/project/3points' ); ?>
 		<?php get_template_part( 'templates/object/project/recent-news-masonry' ); ?>
-		<?php get_template_part( 'templates/object/project/recent-item' ); ?>
+		<?php get_template_part( 'templates/object/project/recent-items' ); ?>
 		<?php get_template_part( 'templates/object/project/front-page-widget-area--bottom' ); ?>
 		<?php get_template_part( 'templates/object/project/social-nav' ); ?>
 	</main>

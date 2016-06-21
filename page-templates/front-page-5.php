@@ -9,7 +9,7 @@
 	<main id="main" role="main">
 		<?php get_template_part( 'templates/object/project/main-visual' ); ?>
 		<?php get_template_part( 'templates/object/project/front-page-widget-area--top' ); ?>
-		<?php get_template_part( 'templates/object/project/recent-item' ); ?>
+		<?php get_template_part( 'templates/object/project/recent-items' ); ?>
 		<?php get_template_part( 'templates/object/project/recent-posts-list--exclude-faq' ); ?>
 		<?php get_template_part( 'templates/object/project/recent-faq' ); ?>
 		<?php get_template_part( 'templates/object/project/front-page-widget-area--bottom' ); ?>

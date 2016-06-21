@@ -1,0 +1,7 @@
+.p-recent-items {
+	margin-bottom: ( $wpbook-base-line-height * -1 );
+
+	[class^="col-"] {
+		margin-bottom: $wpbook-base-line-height;
+	}
+}

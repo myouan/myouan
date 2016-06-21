@@ -8,7 +8,7 @@ if ( ! $posts_item ) {
 	return;
 }
 ?>
-<section class="p-recent-items-masonry">
+<section class="p-recent-items-masonry c-section">
 	<div class="container">
 		<ul class="p-recent-items-masonry__list">
 			<?php foreach ( $posts_item as $post ) : setup_postdata( $post ); ?>

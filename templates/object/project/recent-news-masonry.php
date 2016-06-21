@@ -8,7 +8,7 @@ if ( ! $posts_news ) {
 	return;
 }
 ?>
-<section class="p-recent-news-masonry">
+<section class="p-recent-news-masonry c-section">
 	<div class="container">
 		<ul class="p-recent-news-masonry__list">
 			<?php foreach ( $posts_news as $post ) : setup_postdata( $post ); ?>

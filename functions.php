@@ -136,7 +136,7 @@ function wpbook_widgets_init() {
 		'description'   => __( 'メインビジュアル', 'wpbook' ),
 		'before_widget' => '<section id="%1$s" class="p-widget p-widget--main-visual %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="p-widget-title">',
+		'before_title'  => '<h1 class="p-widget__title">',
 		'after_title'   => '</h1>',
 	) );
 
@@ -146,7 +146,7 @@ function wpbook_widgets_init() {
 		'description'   => __( 'トップページ上部', 'wpbook' ),
 		'before_widget' => '<section id="%1$s" class="p-widget p-widget--front-page-top %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="p-widget-title">',
+		'before_title'  => '<h1 class="p-widget__title">',
 		'after_title'   => '</h1>',
 	) );
 
@@ -156,7 +156,7 @@ function wpbook_widgets_init() {
 		'description'   => __( 'トップページ下部', 'wpbook' ),
 		'before_widget' => '<section id="%1$s" class="p-widget p-widget--front-page-bottom %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="p-widget-title">',
+		'before_title'  => '<h1 class="p-widget__title">',
 		'after_title'   => '</h1>',
 	) );
 
@@ -176,7 +176,7 @@ function wpbook_widgets_init() {
 		'description'   => __( '投稿・お知らせ記事タイトル下', 'wpbook' ),
 		'before_widget' => '<section id="%1$s" class="p-widget p-widget-post-title-bottom %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="p-widget-title">',
+		'before_title'  => '<h1 class="p-widget__title">',
 		'after_title'   => '</h1>',
 	) );
 }

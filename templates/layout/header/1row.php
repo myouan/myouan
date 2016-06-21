@@ -1,11 +1,5 @@
 <header id="header" class="l-header l-header--1row">
-	<?php if ( has_nav_menu( 'header-nav' ) ) : ?>
-	<div class="p-header-nav hidden-xs hidden-sm">
-		<div class="container">
-			<?php get_template_part( 'templates/object/project/header-nav' ); ?>
-		</div>
-	</div>
-	<?php endif; ?>
+	<?php get_template_part( 'templates/object/project/header-nav' ); ?>
 
 	<div class="container">
 		<?php get_template_part( 'templates/object/project/site-branding' ); ?>

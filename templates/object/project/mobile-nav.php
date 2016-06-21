@@ -1,4 +1,7 @@
-<?php if ( has_nav_menu( 'mobile-nav' ) ) : ?>
+<?php if ( ! has_nav_menu( 'mobile-nav' ) ) {
+	return;
+}
+?>
 <div class="p-mobile-nav hidden-md hidden-lg">
 	<div class="container">
 		<?php
@@ -10,4 +13,3 @@
 		?>
 	</div>
 </div>
-<?php endif; ?>

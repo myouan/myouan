@@ -12,8 +12,8 @@ var autoprefixer = require( 'autoprefixer' );
 
 var dir = {
 	src: {
-		css: './assets/src/scss/**/*.scss',
-		js : './assets/src/js/app.js'
+		css: './src/scss/**/*.scss',
+		js : './src/js/app.js'
 	},
 	dist: {
 		css: './',

@@ -21,8 +21,8 @@ export default class Drawer {
     if (!params.btn) {
       params.btn = '.c-drawer__btn';
     }
-    if (!params.toggleSubmenus) {
-      params.toggleSubmenus = '.c-drawer__toggle';
+    if (!params.toggleSubmenu) {
+      params.toggleSubmenu = '.c-drawer__toggle';
     }
     return params;
   }
@@ -53,12 +53,12 @@ export default class Drawer {
         btn.classList.remove('is-close');
       }, false);
 
-      const has_submenus = drawer.querySelectorAll('[aria-expanded]');
-      for (let i = 0; i < has_submenus.length; i ++) {
-        const toggleSubmenus = has_submenus[i].querySelector(this.params.toggleSubmenus);
-        if (toggleSubmenus) {
-          toggleSubmenus.addEventListener('click', (event) => {
-            this.toggle(has_submenus[i]);
+      const has_subitems = drawer.querySelectorAll('[aria-expanded]');
+      for (let i = 0; i < has_subitems.length; i ++) {
+        const toggleSubmenu = has_subitems[i].querySelector(this.params.toggleSubmenu);
+        if (toggleSubmenu) {
+          toggleSubmenu.addEventListener('click', (event) => {
+            this.toggle(has_subitems[i]);
             event.stopPropagation();
           }, false);
         }
@@ -81,9 +81,9 @@ export default class Drawer {
 
   close(drawer) {
     drawer.setAttribute('aria-expanded', 'false');
-    const has_submenus = drawer.querySelectorAll('[aria-expanded]');
-    for (let i = 0; i < has_submenus.length; i ++) {
-      this.close(has_submenus[i]);
+    const has_subitems = drawer.querySelectorAll('[aria-expanded]');
+    for (let i = 0; i < has_subitems.length; i ++) {
+      this.close(has_subitems[i]);
     }
   }
 }

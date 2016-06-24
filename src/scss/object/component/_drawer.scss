@@ -26,17 +26,17 @@
 		z-index: 11;
 	}
 
-	&__menus {
+	&__menu {
 		list-style: none;
 		margin: 0;
 		padding: ($wpbook-base-line-height / 4) 0 0;
 	}
 
-	&__menu {
+	&__item {
 		padding: ( $wpbook-base-line-height / 2 ) $wpbook-base-line-height 0;
 	}
 
-	&__submenus {
+	&__submenu {
 		height: 0;
 		overflow: hidden;
 		list-style: none;
@@ -50,11 +50,11 @@
 		}
 	}
 
-	&__submenu {
+	&__subitem {
 		padding: ( $wpbook-base-line-height / 2 ) 0 0;
 	}
 
-	&__menu, &__submenu {
+	&__item, &__subitem {
 		position: relative;
 
 		> a {

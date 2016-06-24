@@ -19,13 +19,13 @@ function wpbook_drawer_nav( $nav_menu, $args ) {
 
 	$nav_menu = preg_replace(
 		'/<ul id="menu-.+?" class="menu">/ms',
-		'<ul class="c-drawer__menus">',
+		'<ul class="c-drawer__menu">',
 		$nav_menu
 	);
 
 	$nav_menu = preg_replace(
 		'/<ul class="sub-menu">/ms',
-		'<div class="c-drawer__toggle"><i class="fa fa-angle-right"></i></div><ul class="c-drawer__submenus sub-menu">',
+		'<div class="c-drawer__toggle"><i class="fa fa-angle-right"></i></div><ul class="c-drawer__submenu sub-menu">',
 		$nav_menu
 	);
 
@@ -53,9 +53,9 @@ function wpbook_drawer_nav_menu_css_class( $classes, $item, $args, $depth ) {
 		return $classes;
 	}
 	if ( $depth > 0 ) {
-		$classes[] = 'c-drawer__submenu';
+		$classes[] = 'c-drawer__subitem';
 	} else {
-		$classes[] = 'c-drawer__menu';
+		$classes[] = 'c-drawer__item';
 	}
 	return $classes;
 }

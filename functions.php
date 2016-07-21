@@ -48,7 +48,6 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 			'global-nav' => __( 'グローバルメニュー（PC のみ）', 'wpbook' ),
 			'header-nav' => __( 'ヘッダーメニュー（PC のみ）', 'wpbook' ),
 			'footer-nav' => __( 'フッターメニュー（PC のみ）', 'wpbook' ),
-			'drawer-nav' => __( 'モバイル用メニュー（ドロワー）', 'wpbook' ),
 			'mobile-nav' => __( 'モバイル用メニュー（ロゴ下）', 'wpbook' ),
 			'social-nav' => __( 'ソーシャルアカウントメニュー', 'wpbook' ),
 		) );
@@ -101,6 +100,11 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 				array(
 					'name'     => 'Smart Custom Fields',
 					'slug'     => 'smart-custom-fields',
+					'required' => true,
+				),
+				array(
+					'name'     => 'ShiftNav',
+					'slug'     => 'shiftnav-responsive-mobile-menu',
 					'required' => true,
 				),
 				array(
@@ -189,8 +193,3 @@ include_once( get_template_directory() . '/functions/enqueue-scripts.php' );
  * Commen form
  */
 include_once( get_template_directory() . '/functions/comment-form.php' );
-
-/**
- * Drawer nav
- */
-include_once( get_template_directory() . '/functions/drawer-nav.php' );

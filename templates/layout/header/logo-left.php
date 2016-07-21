@@ -22,13 +22,6 @@
 			</div>
 			<?php endif; ?>
 		<?php endif; ?>
-
-		<?php if ( has_nav_menu( 'global-nav' ) ) : ?>
-		<div class="hidden-md hidden-lg">
-			<?php get_template_part( 'templates/object/component/hamburger-btn' ); ?>
-			<?php get_template_part( 'templates/object/project/drawer-nav' ); ?>
-		</div>
-		<?php endif; ?>
 	</div>
 
 	<?php if ( has_nav_menu( 'global-nav' ) ) : ?>

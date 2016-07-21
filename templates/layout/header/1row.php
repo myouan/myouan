@@ -10,10 +10,6 @@
 				<?php get_template_part( 'templates/object/project/global-nav' ); ?>
 			</div>
 		</nav>
-		<div class="hidden-md hidden-lg">
-			<?php get_template_part( 'templates/object/component/hamburger-btn' ); ?>
-			<?php get_template_part( 'templates/object/project/drawer-nav' ); ?>
-		</div>
 		<?php endif; ?>
 	</div>
 

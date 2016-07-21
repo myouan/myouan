@@ -1,8 +1,5 @@
 var $ = require( 'jquery' );
 
-import Drawer from './drawer.js';
-new Drawer();
-
 import StickyHeader from './sticky-header.js';
 new StickyHeader();
 

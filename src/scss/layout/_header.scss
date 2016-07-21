@@ -22,13 +22,6 @@
 		margin-bottom: $wpbook-base-line-height;
 	}
 
-	.c-hamburger-btn {
-		position: absolute;
-		top: 50%;
-		right: 15px;
-		transform: translateY( -50% );
-	}
-
 	&--overlay {
 		background-color: transparent;
 		box-shadow: none;

@@ -122,6 +122,16 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 					'slug'     => 'master-slider',
 					'required' => false,
 				),
+				array(
+					'name'     => 'Yoast SEO',
+					'slug'     => 'wordpress-seo',
+					'required' => false,
+				),
+				array(
+					'name'     => 'Google Analytics by MonsterInsights',
+					'slug'     => 'google-analytics-for-wordpress',
+					'required' => false,
+				),
 			);
 
 			$config = array(

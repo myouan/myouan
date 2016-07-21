@@ -113,6 +113,11 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 					'slug'     => 'wp-pagenavi',
 					'required' => false,
 				),
+				array(
+					'name'     => 'Master Slider',
+					'slug'     => 'master-slider',
+					'required' => false,
+				),
 			);
 
 			$config = array(

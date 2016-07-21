@@ -44,3 +44,7 @@ h5, h6 {
 p, ul, ol, dl, table {
 	margin-bottom: $wpbook-base-line-height;
 }
+
+.input-group {
+	z-index: 0;
+}

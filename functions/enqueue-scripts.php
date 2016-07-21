@@ -15,8 +15,26 @@ function wpbook_wp_enqueue_scripts() {
 		get_template(),
 		$template_directory_uri . '/style.min.css',
 		array( 'bootstrap' ),
-		'3.3.5'
+		$version
 	);
+
+	$main_color_css = SCF::get_option_meta( 'theme-option', 'main-color-setting' );
+	wp_enqueue_style(
+		'wpbook-override',
+		$template_directory_uri . '/override.css',
+		array( get_template() ),
+		$version
+	);
+
+	if ( class_exists( 'SCF' ) ) {
+		$main_color_css = SCF::get_option_meta( 'theme-option', 'main-color-setting' );
+		wp_enqueue_style(
+			'wpbook-main-color-css',
+			$template_directory_uri . '/assets/main-color/' . $main_color_css . '.css',
+			array( get_template() ),
+			$version
+		);
+	}
 
 	wp_enqueue_style(
 		'font-awesome',

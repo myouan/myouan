@@ -18,7 +18,6 @@ function wpbook_wp_enqueue_scripts() {
 		$version
 	);
 
-	$main_color_css = SCF::get_option_meta( 'theme-option', 'main-color-setting' );
 	wp_enqueue_style(
 		'wpbook-override',
 		$template_directory_uri . '/override.css',

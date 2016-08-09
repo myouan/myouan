@@ -82,6 +82,7 @@ function wpbook_wp_enqueue_scripts() {
 		true
 	);
 
+	/*
 	wp_enqueue_script(
 		'masonry',
 		$template_directory_uri . '/assets/vendor/masonry.pkgd.min.js',
@@ -89,6 +90,8 @@ function wpbook_wp_enqueue_scripts() {
 		$version,
 		true
 	);
+	*/
+	wp_enqueue_script( 'jquery-masonry' );
 
 	wp_enqueue_script(
 		get_template(),

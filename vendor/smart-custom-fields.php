@@ -125,6 +125,7 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 			'name'  => 'front-page-3points-1-image',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-3points-1-description',
@@ -142,6 +143,7 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 			'name'  => 'front-page-3points-2-image',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-3points-2-description',
@@ -159,6 +161,7 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 			'name'  => 'front-page-3points-3-image',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-3points-3-description',
@@ -182,21 +185,25 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 			'name'  => 'front-page-gallery-1',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-gallery-2',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-gallery-3',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-gallery-4',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 	) );
 	$settings[] = $Setting;
@@ -210,6 +217,7 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 			'name'  => 'front-page-feature-image',
 			'label' => __( '画像', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 		array(
 			'name'  => 'front-page-feature-html',
@@ -311,6 +319,7 @@ function register_fields_for_item( $settings, $type, $id, $meta_type ) {
 			'name'  => 'main-visual',
 			'label' => __( 'メインビジュアル', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 	) );
 	$settings[] = $Setting;
@@ -346,6 +355,7 @@ function register_fields_for_post_and_news( $settings, $type, $id, $meta_type ) 
 			'name'  => 'main-visual',
 			'label' => __( 'メインビジュアル', 'wpbook' ),
 			'type'  => 'image',
+			'size'  => 'medium',
 		),
 	) );
 	$settings[] = $Setting;

@@ -13,6 +13,8 @@
 						}
 						?>
 					</ul>
+
+					<?php get_template_part( 'templates/object/project/pagination' ); ?>
 				</main>
 			</div>
 			<div class="col-md-3">

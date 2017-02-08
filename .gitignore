@@ -2,7 +2,5 @@
 .sass-cache/
 npm-debug.log
 node_modules/
-assets/js
-assets/css
-assets/packages
+assets/
 style.css

@@ -56,9 +56,9 @@ function wpbook_get_base_font_stylsheet() {
 		return;
 	}
 	if ( SCF::get_option_meta( 'theme-option', 'base-font' ) === 'serif' ) {
-		return get_template_directory_uri() . '/assets/theme-option/base-font/serif.css';
+		return get_template_directory_uri() . '/assets/theme/theme-option/base-font/serif.css';
 	} else {
-		return get_template_directory_uri() . '/assets/theme-option/base-font/sans-serif.css';
+		return get_template_directory_uri() . '/assets/theme/theme-option/base-font/sans-serif.css';
 	}
 }
 

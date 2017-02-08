@@ -14,11 +14,13 @@ var rimraf       = require('rimraf');
 var dir = {
   src: {
     css     : './src/scss',
+    theme   : './src/theme',
     js      : './src/js',
     packages: 'src/packages'
   },
   dist: {
     css     : './assets/css',
+    theme   : './assets/theme',
     js      : './assets/js',
     packages: 'assets/packages'
   }
@@ -32,11 +34,17 @@ gulp.task('sass', function() {
         browsers: ['last 2 versions'],
         cascade: false
       })
-   ]))
+    ]))
     .pipe(gulp.dest(dir.dist.css))
     .pipe(postcss([cssnano()]))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(dir.dist.css));
+});
+
+gulp.task('theme', function() {
+  return gulp.src(dir.src.theme + '/**/*.css')
+    .pipe(postcss([cssnano()]))
+    .pipe(gulp.dest(dir.dist.theme));
 });
 
 gulp.task('browserify', function() {
@@ -68,7 +76,7 @@ gulp.task('copy-packages', ['remove-packages-dir'], function(cb) {
     .pipe(gulp.dest(dir.dist.packages));
 });
 
-gulp.task('build', ['sass', 'browserify', 'copy-packages']);
+gulp.task('build', ['sass', 'theme', 'browserify', 'copy-packages']);
 
 gulp.task('browsersync', function() {
   browser_sync.init({
@@ -83,5 +91,6 @@ gulp.task('browsersync', function() {
 
 gulp.task('default', ['build', 'browsersync'], function() {
   gulp.watch([dir.src.css + '/**/*.scss'], ['sass']);
+  gulp.watch([dir.src.theme + '/**/*.css'], ['theme']);
   gulp.watch([dir.src.js + '/**/*.js'], ['browserify']);
 });

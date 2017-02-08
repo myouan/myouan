@@ -6,14 +6,14 @@ function wpbook_wp_enqueue_scripts() {
 
 	wp_enqueue_style(
 		'bootstrap',
-		$template_directory_uri . '/assets/vendor/bootstrap/css/bootstrap.min.css',
+		$template_directory_uri . '/assets/packages/bootstrap/dist/css/bootstrap.min.css',
 		array(),
-		'3.3.5'
+		'3.3.7'
 	);
 
 	wp_enqueue_style(
 		get_template(),
-		$template_directory_uri . '/style.min.css',
+		$template_directory_uri . '/assets/css/style.min.css',
 		array( 'bootstrap' ),
 		$version
 	);
@@ -37,9 +37,9 @@ function wpbook_wp_enqueue_scripts() {
 
 	wp_enqueue_style(
 		'font-awesome',
-		$template_directory_uri . '/assets/vendor/font-awesome/css/font-awesome.min.css',
+		$template_directory_uri . '/assets/packages/font-awesome/css/font-awesome.min.css',
 		array(),
-		'4.6.3'
+		'4.7.0'
 	);
 
 	if ( wpbook_get_base_font_stylsheet() ) {
@@ -81,15 +81,6 @@ function wpbook_wp_enqueue_scripts() {
 		true
 	);
 
-	/*
-	wp_enqueue_script(
-		'masonry',
-		$template_directory_uri . '/assets/vendor/masonry.pkgd.min.js',
-		array( 'jquery' ),
-		$version,
-		true
-	);
-	*/
 	wp_enqueue_script( 'jquery-masonry' );
 
 	wp_enqueue_script(
@@ -98,6 +89,16 @@ function wpbook_wp_enqueue_scripts() {
 		array( 'bootstrap' ),
 		$version,
 		true
+	);
+
+	wp_enqueue_script(
+		'html5shiv',
+		get_template_directory_uri() . '/assets/packages/html5shiv/dist/html5shiv.min.js'
+	);
+	wp_script_add_data(
+		'html5shiv',
+		'conditional',
+		'lt IE 9'
 	);
 }
 add_action( 'wp_enqueue_scripts', 'wpbook_wp_enqueue_scripts' );

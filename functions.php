@@ -78,7 +78,7 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 			if ( wpbook_get_heading_font_stylsheet() ) {
 				add_editor_style( wpbook_get_heading_font_stylsheet() );
 			}
-			add_editor_style( './editor-style.css' );
+			add_editor_style( './assets/css/editor-style.css' );
 		}
 		add_action( 'admin_init', 'wpbook_add_editor_styles' );
 

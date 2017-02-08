@@ -1,30 +1,30 @@
 .p-content {
-	margin: 0 0 $wpbook-base-line-height;
+  margin: 0 0 $wpbook-base-line-height;
 
-	&__subcopy {
-		margin: 0 0 ( $wpbook-base-line-height / 2 );
-		background-color: #eee;
-		padding: $wpbook-base-font-size;
-	}
+  &__subcopy {
+    margin: 0 0 ($wpbook-base-line-height / 2);
+    background-color: #eee;
+    padding: $wpbook-base-font-size;
+  }
 
-	&__entry-meta {
-		margin: 0 0 $wpbook-base-line-height;
-		border-top: 1px solid #ddd;
-		padding: $wpbook-base-font-size 0 0;
-	}
+  &__entry-meta {
+    margin: 0 0 $wpbook-base-line-height;
+    border-top: 1px solid #ddd;
+    padding: $wpbook-base-font-size 0 0;
+  }
 
-	&__title {
-		@include wpbook-font-size-line-height( $wpbook-base-font-size * 2 );
-		margin: 0 0 $wpbook-base-font-size;
-	}
+  &__title {
+    @include wpbook-font-size-line-height($wpbook-base-font-size * 2);
+    margin: 0 0 $wpbook-base-font-size;
+  }
 
-	&__excerpt {
-		margin: 0 0 $wpbook-base-line-height;
-		background-color: #eee;
-		padding: $wpbook-base-font-size;
+  &__excerpt {
+    margin: 0 0 $wpbook-base-line-height;
+    background-color: #eee;
+    padding: $wpbook-base-font-size;
 
-		> :last-child {
-			margin-bottom: 0;
-		}
-	}
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
 }

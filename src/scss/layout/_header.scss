@@ -1,90 +1,90 @@
 @mixin header_shadow() {
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
 }
 
 .l-header {
-	background-color: #fff;
-	@include header_shadow();
-	transition: background-color .2s;
+  background-color: #fff;
+  @include header_shadow();
+  transition: background-color .2s;
 
-	@include wpbook-bp-md-min() {
-		position: fixed;
-		right: 0;
-		left: 0;
-		z-index: 1;
-	}
+  @include wpbook-bp-md-min() {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
 
-	> .container {
-		position: relative;
-	}
+  > .container {
+    position: relative;
+  }
 
-	.p-mobile-nav {
-		margin-bottom: $wpbook-base-line-height;
-	}
+  .p-mobile-nav {
+    margin-bottom: $wpbook-base-line-height;
+  }
 
-	&--overlay {
-		background-color: transparent;
-		box-shadow: none;
-	}
+  &--overlay {
+    background-color: transparent;
+    box-shadow: none;
+  }
 
-	&--is-scrolled {
-		background-color: #fff;
-		@include header_shadow();
-	}
+  &--is-scrolled {
+    background-color: #fff;
+    @include header_shadow();
+  }
 
-	&--logo-left {
-		.p-site-branding {
-			padding: ( $wpbook-base-line-height / 2 ) $wpbook-base-line-height ( $wpbook-base-line-height / 2 ) 0;
-		}
+  &--logo-left {
+    .p-site-branding {
+      padding: ($wpbook-base-line-height / 2) $wpbook-base-line-height ($wpbook-base-line-height / 2) 0;
+    }
 
-		.p-site-action {
-			padding: ( $wpbook-base-line-height / 2 ) 0 ( $wpbook-base-line-height / 2 ) 0;
-		}
+    .p-site-action {
+      padding: ($wpbook-base-line-height / 2) 0 ($wpbook-base-line-height / 2) 0;
+    }
 
-		@include wpbook-bp-md-min() {
-			> .container {
-				display: table;
+    @include wpbook-bp-md-min() {
+      > .container {
+        display: table;
 
-				> * {
-					display: table-cell;
-					vertical-align: middle;
-				}
-			}
+        > * {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
 
-			.p-site-description {
-			}
+      .p-site-description {
+      }
 
-			.p-site-action {
-				padding-left: $wpbook-base-line-height;
-			}
+      .p-site-action {
+        padding-left: $wpbook-base-line-height;
+      }
 
-			.p-site-action {
-				width: 1%;
-			}
-		}
-	}
+      .p-site-action {
+        width: 1%;
+      }
+    }
+  }
 
-	&--logo-center {
-		.p-site-branding {
-			padding: ( $wpbook-base-line-height / 2 ) 0;
-			text-align: center;
-		}
-	}
+  &--logo-center {
+    .p-site-branding {
+      padding: ($wpbook-base-line-height / 2) 0;
+      text-align: center;
+    }
+  }
 
-	&--1row {
-		.p-site-branding {
-			padding: ( $wpbook-base-line-height / 2 ) 0;
-		}
+  &--1row {
+    .p-site-branding {
+      padding: ($wpbook-base-line-height / 2) 0;
+    }
 
-		@include wpbook-bp-md-min() {
-			> .container {
-				display: table;
+    @include wpbook-bp-md-min() {
+      > .container {
+        display: table;
 
-				> * {
-					display: table-cell;
-					vertical-align: middle;
-				}
-			}
-		}
-	}
+        > * {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
 }

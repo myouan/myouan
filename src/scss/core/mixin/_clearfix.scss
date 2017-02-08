@@ -1,9 +1,9 @@
 @mixin wpbook-clearfix() {
-	clear: both;
+  clear: both;
 
-	&::before, &::after {
-		content: ' ';
-		display: table;
-		clear: both;
-	}
+  &::before, &::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
 }

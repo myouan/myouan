@@ -1,25 +1,25 @@
 .p-pagination {
-	text-align: center;
+  text-align: center;
 
-	.screen-reader-text {
-		display: none;
-	}
+  .screen-reader-text {
+    display: none;
+  }
 
-	.page-numbers {
-		display: inline-block;
-		font-size: 12px;
-		line-height: 1;
-		padding: 8px 10px;
-		text-decoration: none;
-	}
+  .page-numbers {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 8px 10px;
+    text-decoration: none;
+  }
 
-	a.page-numbers {
-		background-color: #eaeaea;
-		color: #8f8f8f;
-	}
+  a.page-numbers {
+    background-color: #eaeaea;
+    color: #8f8f8f;
+  }
 
-	span.page-numbers {
-		background-color: #44556d;
-		color: #fff;
-	}
+  span.page-numbers {
+    background-color: #44556d;
+    color: #fff;
+  }
 }

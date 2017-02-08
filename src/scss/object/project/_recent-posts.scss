@@ -1,19 +1,19 @@
 .p-recent-posts {
-	&__title {
-		margin: 0 0 $wpbook-base-line-height;
-		border-bottom: 1px solid $wpbook-color-gray;
-		@include wpbook-font-size-line-height( $wpbook-base-font-size + 2 );
-		padding: 0 0 8px;
-	}
+  &__title {
+    margin: 0 0 $wpbook-base-line-height;
+    border-bottom: 1px solid $wpbook-color-gray;
+    @include wpbook-font-size-line-height($wpbook-base-font-size + 2);
+    padding: 0 0 8px;
+  }
 
-	&__list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-	&__item {
-		margin: ( $wpbook-base-line-height / 2 ) 0;
-		padding: 0;
-	}
+  &__item {
+    margin: ($wpbook-base-line-height / 2) 0;
+    padding: 0;
+  }
 }

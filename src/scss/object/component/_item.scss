@@ -1,16 +1,16 @@
 .c-item {
-	&__thumbnail {
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
+  &__thumbnail {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-		&::before {
-			content: '';
-			display: block;
-			padding-top: 75%;
-		}
-	}
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 75%;
+    }
+  }
 
-	&__title {
-	}
+  &__title {
+  }
 }

@@ -1,5 +1,5 @@
 @mixin wpbook-hover() {
-	&:hover, &:focus {
-		@content;
-	}
+  &:hover, &:focus {
+    @content;
+  }
 }

@@ -1,5 +1,13 @@
-@import "style";
+@import 'core/function/*';
+@import 'core/variable/*';
+@import 'core/mixin/*';
+
+@import 'foundation/wordpress/*';
+@import 'foundation/foundation';
+
+@import 'object/component/*';
+@import 'object/project/*';
 
 body {
-	margin: 10px;
+  margin: 10px;
 }

@@ -1,61 +1,61 @@
 .p-global-nav {
-	@include wpbook-font-size-line-height( $wpbook-base-font-size - 2 );
+  @include wpbook-font-size-line-height($wpbook-base-font-size - 2);
 
-	.menu-item {
-		position: relative;
-		margin: 0;
-		padding: 0;
+  .menu-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
 
-		> a {
-			display: block;
-			text-decoration: none;
-		}
+    > a {
+      display: block;
+      text-decoration: none;
+    }
 
-		@include wpbook-hover() {
-			> .sub-menu {
-				visibility: visible;
-				opacity: 1;
-			}
-		}
-	}
+    @include wpbook-hover() {
+      > .sub-menu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 
-	.menu {
-		list-style: none;
-		margin: 0;
-		padding: 0;
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-		> .menu-item {
-			display: inline-block;
+    > .menu-item {
+      display: inline-block;
 
-			> a {
-				padding: ( $wpbook-base-line-height / 2 ) $wpbook-base-line-height;
-			}
-		}
-	}
+      > a {
+        padding: ($wpbook-base-line-height / 2) $wpbook-base-line-height;
+      }
+    }
+  }
 
-	.sub-menu {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		z-index: 1;
-		visibility: hidden;
-		min-width: 200px;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		opacity: 0;
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
 
-		> .menu-item {
-			> a {
-				padding: ($wpbook-base-line-height / 2) $wpbook-base-line-height;
-				background-color: #333;
-				color: #fff;
-			}
+    > .menu-item {
+      > a {
+        padding: ($wpbook-base-line-height / 2) $wpbook-base-line-height;
+        background-color: #333;
+        color: #fff;
+      }
 
-			> .sub-menu {
-				top: 0;
-				left: 100%;
-			}
-		}
-	}
+      > .sub-menu {
+        top: 0;
+        left: 100%;
+      }
+    }
+  }
 }

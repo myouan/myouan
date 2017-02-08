@@ -1,0 +1,16 @@
+.wp-caption {
+  border: none;
+  text-align: left;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 0 $wpbook-base-line-height;
+  border-radius: 0;
+  max-width: 100%;
+
+  &-text {
+    color: $wpbook-color-gray;
+    margin-top: 5px;
+    font-size: ($wpbook-base-font-size - 2px);
+    line-height: 1.4;
+  }
+}

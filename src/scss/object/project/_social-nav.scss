@@ -1,114 +1,114 @@
 .p-social-nav {
-	.menu {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		text-align: center;
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 
-		.menu-item {
-			position: relative;
-			margin: 0 ( $wpbook-base-font-size / 2 );
-			display: inline-block;
-			padding: 0;
+    .menu-item {
+      position: relative;
+      margin: 0 ($wpbook-base-font-size / 2);
+      display: inline-block;
+      padding: 0;
 
-			a {
-				display: block;
-				width: 14px;
-				height: 14px;
-				font: normal normal normal 14px/1 FontAwesome;
-				-webkit-font-smoothing: antialiased;
-				overflow: hidden;
-				text-decoration: none;
+      a {
+        display: block;
+        width: 14px;
+        height: 14px;
+        font: normal normal normal 14px/1 FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        overflow: hidden;
+        text-decoration: none;
 
-				&:before {
-					content: "\f111";
-					display: inline-block;
-				}
-			}
+        &:before {
+          content: "\f111";
+          display: inline-block;
+        }
+      }
 
-			a[href*="wordpress.org"]:before {
-				content: "\f19a";
-			}
+      a[href*="wordpress.org"]:before {
+        content: "\f19a";
+      }
 
-			a[href*="github.com"]:before {
-				content: "\f09b";
-			}
+      a[href*="github.com"]:before {
+        content: "\f09b";
+      }
 
-			a[href*="dribbble.com"]:before {
-				content: "\f17d";
-			}
+      a[href*="dribbble.com"]:before {
+        content: "\f17d";
+      }
 
-			a[href*="twitter.com"]:before {
-				content: "\f099";
-			}
+      a[href*="twitter.com"]:before {
+        content: "\f099";
+      }
 
-			a[href*="facebook.com"]:before {
-				content: "\f230";
-			}
+      a[href*="facebook.com"]:before {
+        content: "\f230";
+      }
 
-			a[href*="plus.google.com"]:before {
-				content: "\f2b3";
-			}
+      a[href*="plus.google.com"]:before {
+        content: "\f2b3";
+      }
 
-			a[href*="linkedin.com"]:before {
-				content: "\f08c";
-			}
+      a[href*="linkedin.com"]:before {
+        content: "\f08c";
+      }
 
-			a[href*="pinterest.com"]:before {
-				content: "\f0d2";
-			}
+      a[href*="pinterest.com"]:before {
+        content: "\f0d2";
+      }
 
-			a[href*="flickr.com"]:before {
-				content: "\f16e";
-			}
+      a[href*="flickr.com"]:before {
+        content: "\f16e";
+      }
 
-			a[href*="vimeo.com"]:before {
-				content: "\f194";
-			}
+      a[href*="vimeo.com"]:before {
+        content: "\f194";
+      }
 
-			a[href*="youtube.com"]:before {
-				content: "\f167";
-			}
+      a[href*="youtube.com"]:before {
+        content: "\f167";
+      }
 
-			a[href*="instagram.com"]:before {
-				content: "\f16d";
-			}
+      a[href*="instagram.com"]:before {
+        content: "\f16d";
+      }
 
-			a[href*="codepen.io"]:before {
-				content: "\f1cb";
-			}
+      a[href*="codepen.io"]:before {
+        content: "\f1cb";
+      }
 
-			a[href*="skype.com"]:before {
-				content: "\f17e";
-			}
+      a[href*="skype.com"]:before {
+        content: "\f17e";
+      }
 
-			a[href*="digg.com"]:before {
-				content: "\f1a6";
-			}
+      a[href*="digg.com"]:before {
+        content: "\f1a6";
+      }
 
-			a[href*="reddit.com"]:before {
-				content: "\f281";
-			}
+      a[href*="reddit.com"]:before {
+        content: "\f281";
+      }
 
-			a[href*="stumbleupon.com"]:before {
-				content: "\f1a4";
-			}
+      a[href*="stumbleupon.com"]:before {
+        content: "\f1a4";
+      }
 
-			a[href*="getpocket.com"]:before {
-				content: "\f265";
-			}
+      a[href*="getpocket.com"]:before {
+        content: "\f265";
+      }
 
-			a[href*="dropbox.com"]:before {
-				content: "\f16b";
-			}
+      a[href*="dropbox.com"]:before {
+        content: "\f16b";
+      }
 
-			a[href*="foursquare.com"]:before {
-				content: "\f180";
-			}
+      a[href*="foursquare.com"]:before {
+        content: "\f180";
+      }
 
-			a[href$="/feed"]:before {
-				content: "\f09e";
-			}
-		}
-	}
+      a[href$="/feed"]:before {
+        content: "\f09e";
+      }
+    }
+  }
 }

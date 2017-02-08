@@ -1,32 +1,32 @@
 .p-recent-news-masonry {
-	&__list {
-		@include wpbook-clearfix();
-		list-style: none;
-		margin: 0 -15px -15px;
-		padding: 0;
-	}
+  &__list {
+    @include wpbook-clearfix();
+    list-style: none;
+    margin: 0 -15px -15px;
+    padding: 0;
+  }
 
-	&__item {
-		padding: 15px;
-		padding: 0;
+  &__item {
+    padding: 15px;
+    padding: 0;
 
-		@include wpbook-bp-md-min() {
-			float: left;
-			width: 25%;
-		}
+    @include wpbook-bp-md-min() {
+      float: left;
+      width: 25%;
+    }
 
-		> a {
-			display: block;
-			color: $wpbook-color-text;
-			padding: 15px;
-			text-decoration: none;
-		}
-	}
+    > a {
+      display: block;
+      color: $wpbook-color-text;
+      padding: 15px;
+      text-decoration: none;
+    }
+  }
 
-	&__thumbnail {
-		> img {
-			height: auto;
-			width: 100%;
-		}
-	}
+  &__thumbnail {
+    > img {
+      height: auto;
+      width: 100%;
+    }
+  }
 }

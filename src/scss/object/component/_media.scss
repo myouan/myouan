@@ -1,23 +1,23 @@
 .c-media {
-	@include wpbook-clearfix();
+  @include wpbook-clearfix();
 
-	&__figure {
-		float: left;
-		margin-right: $wpbook-base-font-size;
-		width: 25%;
-		background-color: #eee;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
+  &__figure {
+    float: left;
+    margin-right: $wpbook-base-font-size;
+    width: 25%;
+    background-color: #eee;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-		&::before {
-			content: '';
-			display: block;
-			padding-top: 75%;
-		}
-	}
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 75%;
+    }
+  }
 
-	&__body {
-		overflow: hidden;
-	}
+  &__body {
+    overflow: hidden;
+  }
 }

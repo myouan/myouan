@@ -1,0 +1,16 @@
+.alignleft {
+  float: left;
+  margin-right: $wpbook-base-font-size;
+}
+
+.alignright {
+  float: right;
+  margin-left: $wpbook-base-font-size;
+}
+
+.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}

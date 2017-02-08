@@ -1,5 +1,6 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
+var sassGlob     = require('gulp-sass-glob');
 var postcss      = require('gulp-postcss');
 var cssnano      = require('cssnano');
 var rename       = require('gulp-rename');
@@ -28,6 +29,7 @@ var dir = {
 
 gulp.task('sass', function() {
   return gulp.src(dir.src.css + '/*.scss')
+    .pipe(sassGlob())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({

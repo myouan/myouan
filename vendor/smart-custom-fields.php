@@ -251,16 +251,34 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	/**
 	 * archive page layout
 	 */
-	$Setting = SCF::add_setting( 'archive-page-layout', __( 'アーカイブページレイアウト', 'wpbook' ) );
+	$Setting = SCF::add_setting( 'archive-page-layout', __( 'ブログ・お知らせアーカイブレイアウト', 'wpbook' ) );
 	$Setting->add_group( 'group-archive-page-layout', false, array(
 		array(
 			'name'  => 'archive-page-layout',
-			'label' => __( 'アーカイブページレイアウト', 'wpbook' ),
+			'label' => __( 'ブログ・お知らせアーカイブレイアウト', 'wpbook' ),
 			'type'  => 'radio',
 			'choices' => array(
 				'thumbnail'    => __( 'サムネイルあり', 'wpbook' ),
 				'no-thumbnail' => __( 'サムネイルなし', 'wpbook' ),
 				'only-title'   => __( 'タイトルのみ', 'wpbook' ),
+			),
+			'default' => 'thumbnail',
+		),
+	) );
+	$settings[] = $Setting;
+
+	/**
+	 * items archive page layout
+	 */
+	$Setting = SCF::add_setting( 'items-archive-page-layout', __( '商品アーカイブレイアウト', 'wpbook' ) );
+	$Setting->add_group( 'group-items-archive-page-layout', false, array(
+		array(
+			'name'  => 'items-archive-page-layout',
+			'label' => __( '商品アーカイブレイアウト', 'wpbook' ),
+			'type'  => 'radio',
+			'choices' => array(
+				'thumbnail'    => __( 'サムネイル', 'wpbook' ),
+				'thumbnail-excerpt' => __( 'サムネイル + 抜粋', 'wpbook' ),
 			),
 			'default' => 'thumbnail',
 		),

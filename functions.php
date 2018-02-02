@@ -1,6 +1,6 @@
 <?php
-include_once( get_template_directory() . '/vendor/smart-custom-fields.php' );
-include_once( get_template_directory() . '/vendor/class-tgm-plugin-activation.php' );
+include_once( get_template_directory() . '/inc/smart-custom-fields.php' );
+include_once( get_template_directory() . '/inc/class-tgm-plugin-activation.php' );
 include_once( get_template_directory() . '/functions/template-tags.php' );
 
 if ( ! function_exists( 'wpbook_setup' ) ) {

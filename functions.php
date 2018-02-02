@@ -1,4 +1,9 @@
 <?php
+/**
+* Uses composer autoloader
+*/
+require_once( get_theme_file_path( '/vendor/autoload.php' ) );
+
 include_once( get_template_directory() . '/inc/smart-custom-fields.php' );
 include_once( get_template_directory() . '/inc/class-tgm-plugin-activation.php' );
 include_once( get_template_directory() . '/functions/template-tags.php' );

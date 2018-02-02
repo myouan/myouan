@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="contents" class="l-contents">
-	<?php get_template_part( 'templates/object/project/page-header' ); ?>
+	<?php get_template_part( 'templates/page-header' ); ?>
 
 	<div class="container">
 		<div class="row">
@@ -22,8 +22,8 @@
 		</div>
 	</div>
 
-	<?php get_template_part( 'templates/object/project/front-page-widget-area--bottom' ); ?>
-	<?php get_template_part( 'templates/object/project/social-nav' ); ?>
+	<?php get_template_part( 'templates/front-page-widget-area--bottom' ); ?>
+	<?php get_template_part( 'templates/social-nav' ); ?>
 </div>
 
 <?php get_footer(); ?>

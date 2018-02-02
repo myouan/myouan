@@ -16,6 +16,7 @@
 					?>
 
 					<?php get_template_part( 'templates/pagination' ); ?>
+					<?php wp_reset_query(); ?>
 				</main>
 			</div>
 			<div class="col-md-3">

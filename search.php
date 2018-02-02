@@ -7,14 +7,15 @@
 				<main id="main" role="main">
 					<?php if ( have_posts() ) : ?>
 
-						<ul class="p-entries">
-							<?php
-							while ( have_posts() ) {
-								the_post();
-								get_template_part( 'templates/content/content' );
-							}
-							?>
-						</ul>
+						<?php
+						$layout = 'thumbnail';
+
+						if ( class_exists( 'SCF' ) && SCF::get_option_meta( 'theme-option', 'archive-page-layout' ) ) {
+							$layout = SCF::get_option_meta( 'theme-option', 'archive-page-layout' );
+						}
+
+						get_template_part( 'templates/entries/' . $layout );
+						?>
 
 					<?php else : ?>
 

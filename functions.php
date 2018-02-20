@@ -13,6 +13,7 @@ include_once( get_template_directory() . '/functions/template-tags.php' );
  */
 $includes = [
 	'/inc/customizer/*',
+	'/inc/customizer/*/sections',
 	'/inc/customizer/*/sections/*',
 	'/inc/customizer/*/sections/*/controls',
 	'/inc/customizer/*/controls',

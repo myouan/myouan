@@ -29,66 +29,6 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	}
 
 	/**
-	 * front page 3 points
-	 */
-	$Setting = SCF::add_setting( 'front-page-3points', __( 'トップページ3つのポイント', 'wpbook' ) );
-	$Setting->add_group( 'group-front-page-3points-1', false, array(
-		array(
-			'name'  => 'front-page-3points-1-image',
-			'label' => __( '画像', 'wpbook' ),
-			'type'  => 'image',
-			'size'  => 'medium',
-		),
-		array(
-			'name'  => 'front-page-3points-1-description',
-			'label' => __( '概要', 'wpbook' ),
-			'type'  => 'textarea',
-		),
-		array(
-			'name'  => 'front-page-3points-1-url',
-			'label' => __( 'リンクURL', 'wpbook' ),
-			'type'  => 'text',
-		),
-	) );
-	$Setting->add_group( 'group-front-page-3points-2', false, array(
-		array(
-			'name'  => 'front-page-3points-2-image',
-			'label' => __( '画像', 'wpbook' ),
-			'type'  => 'image',
-			'size'  => 'medium',
-		),
-		array(
-			'name'  => 'front-page-3points-2-description',
-			'label' => __( '概要', 'wpbook' ),
-			'type'  => 'textarea',
-		),
-		array(
-			'name'  => 'front-page-3points-2-url',
-			'label' => __( 'リンクURL', 'wpbook' ),
-			'type'  => 'text',
-		),
-	) );
-	$Setting->add_group( 'group-front-page-3points-3', false, array(
-		array(
-			'name'  => 'front-page-3points-3-image',
-			'label' => __( '画像', 'wpbook' ),
-			'type'  => 'image',
-			'size'  => 'medium',
-		),
-		array(
-			'name'  => 'front-page-3points-3-description',
-			'label' => __( '概要', 'wpbook' ),
-			'type'  => 'textarea',
-		),
-		array(
-			'name'  => 'front-page-3points-3-url',
-			'label' => __( 'リンクURL', 'wpbook' ),
-			'type'  => 'text',
-		),
-	) );
-	$settings[] = $Setting;
-
-	/**
 	 * front page gallery
 	 */
 	$Setting = SCF::add_setting( 'front-page-gallery', __( 'トップページギャラリー', 'wpbook' ) );

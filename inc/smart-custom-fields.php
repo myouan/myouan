@@ -29,25 +29,6 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	}
 
 	/**
-	 * color setting
-	 */
-	$Setting = SCF::add_setting( 'main-color-setting', __( 'メインカラー設定', 'wpbook' ) );
-	$Setting->add_group( 'group-main-color-setting', false, array(
-		array(
-			'name'  => 'main-color-setting',
-			'label' => __( 'メインカラー設定', 'wpbook' ),
-			'type'  => 'radio',
-			'choices' => array(
-				'blue'     => __( '堅実（ブルー）', 'wpbook' ),
-				'pastel'   => __( 'いかわいい（パステル）', 'wpbook' ),
-				'monotone' => __( 'シンプル（モノトーン）', 'wpbook' ),
-			),
-			'default' => 'blue',
-		),
-	) );
-	$settings[] = $Setting;
-
-	/**
 	 * font
 	 */
 	$Setting = SCF::add_setting( 'main-color-setting', __( 'フォント設定', 'wpbook' ) );

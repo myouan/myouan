@@ -8,6 +8,22 @@ include_once( get_template_directory() . '/inc/smart-custom-fields.php' );
 include_once( get_template_directory() . '/inc/class-tgm-plugin-activation.php' );
 include_once( get_template_directory() . '/functions/template-tags.php' );
 
+/**
+ * Loads customizer
+ */
+$includes = [
+	'/inc/customizer/*',
+	'/inc/customizer/*/sections/*',
+	'/inc/customizer/*/sections/*/controls',
+	'/inc/customizer/*/controls',
+];
+foreach ( $includes as $include ) {
+	foreach ( glob( __DIR__ . $include . '/*.php' ) as $file ) {
+		$template_name = str_replace( array( trailingslashit( __DIR__ ), '.php' ), '', $file );
+		get_template_part( $template_name );
+	}
+}
+
 if ( ! function_exists( 'wpbook_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.

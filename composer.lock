@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1fb80217bc170474528a32977e46156f",
-    "content-hash": "0fe5821bbb69cfc0787ac327603eaf6c",
+    "hash": "bd01142faefbfaeaa0cf19ea8dd875fd",
+    "content-hash": "099b912275da530b3108664094e42d3d",
     "packages": [
         {
             "name": "inc2734/wp-customizer-framework",
-            "version": "3.0.2",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inc2734/wp-customizer-framework.git",
-                "reference": "067f86e2eb66be9f7c4ae7c448fa1fbcfd1b6045"
+                "reference": "7f95fdf8e42f0caf87a678638e00f6790e774ef0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inc2734/wp-customizer-framework/zipball/067f86e2eb66be9f7c4ae7c448fa1fbcfd1b6045",
-                "reference": "067f86e2eb66be9f7c4ae7c448fa1fbcfd1b6045",
+                "url": "https://api.github.com/repos/inc2734/wp-customizer-framework/zipball/7f95fdf8e42f0caf87a678638e00f6790e774ef0",
+                "reference": "7f95fdf8e42f0caf87a678638e00f6790e774ef0",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
                 }
             ],
             "description": "A library for WordPress Customizer.",
-            "time": "2018-01-26 08:59:36"
+            "time": "2018-02-06 02:41:13"
         }
     ],
     "packages-dev": [],

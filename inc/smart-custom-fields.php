@@ -29,24 +29,6 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	}
 
 	/**
-	 * header button
-	 */
-	$Setting = SCF::add_setting( 'header-btn', __( 'ヘッダーボタン', 'wpbook' ) );
-	$Setting->add_group( 'group-header-btn', false, array(
-		array(
-			'name'  => 'header-btn-text',
-			'label' => __( 'ボタンラベル', 'wpbook' ),
-			'type'  => 'text',
-		),
-		array(
-			'name'    => 'header-btn-url',
-			'label'   => __( 'リンクURL', 'wpbook' ),
-			'type'    => 'text',
-		),
-	) );
-	$settings[] = $Setting;
-
-	/**
 	 * header layout
 	 */
 	$Setting = SCF::add_setting( 'header-layout', __( 'ヘッダーレイアウト', 'wpbook' ) );

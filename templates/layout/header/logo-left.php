@@ -13,8 +13,8 @@
 
 		<?php if ( class_exists( 'SCF' ) ) : ?>
 			<?php
-			$header_btn_text = SCF::get_option_meta( 'theme-option', 'header-btn-text' );
-			$header_btn_url  = SCF::get_option_meta( 'theme-option', 'header-btn-url' );
+			$header_btn_text = get_theme_mod( 'header-btn-text' );
+			$header_btn_url  = get_theme_mod( 'header-btn-url' );
 			?>
 			<?php if ( $header_btn_text ) : ?>
 			<div class="p-site-action">

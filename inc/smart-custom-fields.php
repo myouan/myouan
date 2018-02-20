@@ -29,36 +29,6 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	}
 
 	/**
-	 * font
-	 */
-	$Setting = SCF::add_setting( 'main-color-setting', __( 'フォント設定', 'wpbook' ) );
-	$Setting->add_group( 'group-base-font', false, array(
-		array(
-			'name'  => 'base-font',
-			'label' => __( '基本フォント設定', 'wpbook' ),
-			'type'  => 'radio',
-			'choices' => array(
-				'sans-serif' => __( 'ゴシック', 'wpbook' ),
-				'serif'      => __( '明朝', 'wpbook' ),
-			),
-			'default' => 'sans-serif',
-		),
-	) );
-	$Setting->add_group( 'group-heading-font', false, array(
-		array(
-			'name'  => 'heading-font',
-			'label' => __( '見出しフォント設定', 'wpbook' ),
-			'type'  => 'radio',
-			'choices' => array(
-				'sans-serif' => __( 'ゴシック', 'wpbook' ),
-				'serif'      => __( '明朝', 'wpbook' ),
-			),
-			'default' => 'sans-serif',
-		),
-	) );
-	$settings[] = $Setting;
-
-	/**
 	 * header button
 	 */
 	$Setting = SCF::add_setting( 'header-btn', __( 'ヘッダーボタン', 'wpbook' ) );

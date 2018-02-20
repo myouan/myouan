@@ -39,23 +39,19 @@ function wpbook_wp_enqueue_scripts() {
 		'4.7.0'
 	);
 
-	if ( wpbook_get_base_font_stylsheet() ) {
-		wp_enqueue_style(
-			get_template() . '-base-font',
-			wpbook_get_base_font_stylsheet(),
-			array( get_template() ),
-			$version
-		);
-	}
+	wp_enqueue_style(
+		get_template() . '-base-font',
+		wpbook_get_base_font_stylsheet(),
+		array( get_template() ),
+		$version
+	);
 
-	if ( wpbook_get_heading_font_stylsheet() ) {
-		wp_enqueue_style(
-			get_template() . '-heading-font',
-			wpbook_get_heading_font_stylsheet(),
-			array( get_template() ),
-			$version
-		);
-	}
+	wp_enqueue_style(
+		get_template() . '-heading-font',
+		wpbook_get_heading_font_stylsheet(),
+		array( get_template() ),
+		$version
+	);
 
 	if ( is_child_theme() ) {
 		wp_enqueue_style(

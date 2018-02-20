@@ -93,12 +93,9 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 				get_template_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css',
 				get_template_directory_uri() . '/assets/vendor/font-awesome/css/font-awesome.min.css',
 			) );
-			if ( wpbook_get_base_font_stylsheet() ) {
-				add_editor_style( wpbook_get_base_font_stylsheet() );
-			}
-			if ( wpbook_get_heading_font_stylsheet() ) {
-				add_editor_style( wpbook_get_heading_font_stylsheet() );
-			}
+
+			add_editor_style( wpbook_get_base_font_stylsheet() );
+			add_editor_style( wpbook_get_heading_font_stylsheet() );
 			add_editor_style( './assets/css/editor-style.css' );
 		}
 		add_action( 'admin_init', 'wpbook_add_editor_styles' );

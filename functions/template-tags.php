@@ -52,10 +52,7 @@ function wpbook_get_3points() {
  * @param string
  */
 function wpbook_get_base_font_stylsheet() {
-	if ( ! class_exists( 'SCF' ) ) {
-		return;
-	}
-	if ( SCF::get_option_meta( 'theme-option', 'base-font' ) === 'serif' ) {
+	if ( 'serif' === get_theme_mod( 'base-font' ) ) {
 		return get_template_directory_uri() . '/assets/theme/theme-option/base-font/serif.css';
 	} else {
 		return get_template_directory_uri() . '/assets/theme/theme-option/base-font/sans-serif.css';
@@ -68,12 +65,9 @@ function wpbook_get_base_font_stylsheet() {
  * @param string
  */
 function wpbook_get_heading_font_stylsheet() {
-	if ( ! class_exists( 'SCF' ) ) {
-		return;
-	}
-	if ( SCF::get_option_meta( 'theme-option', 'heading-font' ) === 'serif' ) {
-		return get_template_directory_uri() . '/assets/theme-option/heading-font/serif.css';
+	if ( 'serif' === get_theme_mod( 'heading-font' ) ) {
+		return get_template_directory_uri() . '/assets/theme/theme-option/heading-font/serif.css';
 	} else {
-		return get_template_directory_uri() . '/assets/theme-option/heading-font/sans-serif.css';
+		return get_template_directory_uri() . '/assets/theme/theme-option/heading-font/sans-serif.css';
 	}
 }

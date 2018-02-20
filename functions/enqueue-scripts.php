@@ -68,7 +68,7 @@ function wpbook_wp_enqueue_scripts() {
 
 	wp_enqueue_script(
 		'bootstrap',
-		$template_directory_uri . '/assets/vendor/bootstrap/js/bootstrap.min.js',
+		$template_directory_uri . '/assets/packages/bootstrap/dist/js/bootstrap.min.js',
 		array( 'jquery' ),
 		$version,
 		true

@@ -5,7 +5,7 @@ $customizer = Customizer_Framework::init();
 $customizer->section( 'header-btn', [
 	'title'           => __( 'ヘッダーボタン', 'wpbook' ),
 	'active_callback' => function() {
-		return 'logo-left' === SCF::get_option_meta( 'theme-option', 'header-layout-type' );
+		return 'logo-left' === get_theme_mod( 'header-layout-type' );
 	}
 ] );
 

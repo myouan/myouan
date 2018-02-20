@@ -29,27 +29,6 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	}
 
 	/**
-	 * header layout
-	 */
-	$Setting = SCF::add_setting( 'header-layout', __( 'ヘッダーレイアウト', 'wpbook' ) );
-	$Setting->add_group( 'group-header-layout-2row', false, array(
-		array(
-			'name'  => 'header-layout-type',
-			'label' => __( '', 'wpbook' ),
-			'type'  => 'radio',
-			'choices' => array(
-				'logo-left'   => __( '【2段レイアウト】ロゴ左 + サイト説明 + ヘッダーボタン', 'wpbook' ),
-				'logo-center' => __( '【2段レイアウト】ロゴ中央', 'wpbook' ),
-				'1row'        => __( '【1段レイアウト】ロゴ＋メニュー横並び', 'wpbook' ),
-				'overlay'     => __( '【1段レイアウト】ロゴ＋メニュー横並び、トップページのみオーバレイ', 'wpbook' ),
-			),
-			'default' => 'logo-left',
-			'radio_direction'  => 'vertical',
-		),
-	) );
-	$settings[] = $Setting;
-
-	/**
 	 * front page 3 points
 	 */
 	$Setting = SCF::add_setting( 'front-page-3points', __( 'トップページ3つのポイント', 'wpbook' ) );

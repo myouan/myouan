@@ -9,10 +9,4 @@
 <body <?php body_class(); ?>>
 <div id="container" class="l-container">
 	<?php
-	if ( class_exists( 'SCF' ) ) {
-		$header_layout_type = SCF::get_option_meta( 'theme-option', 'header-layout-type' );
-		if ( $header_layout_type ) {
-			get_template_part( 'templates/layout/header/' . $header_layout_type );
-		}
-	}
-	?>
+	get_template_part( 'templates/layout/header/' . get_theme_mod( 'header-layout-type' ) );

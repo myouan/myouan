@@ -1,12 +1,7 @@
 <?php
-if ( ! class_exists( 'SCF' ) ) {
-	return;
-}
-
 $gallery = array();
 for ( $i = 1; $i <= 4; $i ++ ) {
-	$image = SCF::get_option_meta( 'theme-option', 'front-page-gallery-' . $i );
-	$image_url = wp_get_attachment_url( $image );
+	$image_url = get_theme_mod('front-page-gallery-' . $i );
 	if ( $image_url ) {
 		$gallery[] = $image_url;
 	}

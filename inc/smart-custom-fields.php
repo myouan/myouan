@@ -29,25 +29,6 @@ function register_fields_for_option_page( $settings, $type, $id, $meta_type ) {
 	}
 
 	/**
-	 * front page feature
-	 */
-	$Setting = SCF::add_setting( 'front-page-feature', __( 'トップページおすすめ', 'wpbook' ) );
-	$Setting->add_group( 'group-front-page-feature', false, array(
-		array(
-			'name'  => 'front-page-feature-image',
-			'label' => __( '画像', 'wpbook' ),
-			'type'  => 'image',
-			'size'  => 'medium',
-		),
-		array(
-			'name'  => 'front-page-feature-html',
-			'label' => __( 'HTML', 'wpbook' ),
-			'type'  => 'wysiwyg',
-		),
-	) );
-	$settings[] = $Setting;
-
-	/**
 	 * custom post types
 	 */
 	$Setting = SCF::add_setting( 'custom-post-types', __( 'カスタム投稿タイプ', 'wpbook' ) );

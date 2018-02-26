@@ -1,11 +1,6 @@
 <?php
-if ( ! class_exists( 'SCF' ) ) {
-	return;
-}
-
-$image     = SCF::get_option_meta( 'theme-option', 'front-page-feature-image' );
-$image_url = wp_get_attachment_url( $image );
-$html      = SCF::get_option_meta( 'theme-option', 'front-page-feature-html' );
+$image_url = get_theme_mod( 'front-page-feature-image' );
+$html      = get_theme_mod( 'front-page-feature-html' );
 
 if ( ! $image_url && ! $html ) {
 	return;
@@ -14,6 +9,6 @@ if ( ! $image_url && ! $html ) {
 <section class="p-feature c-section">
 	<div class="p-feature__figure" style="background-image: url( <?php echo esc_url( $image_url ); ?> );"></div>
 	<div class="p-feature__body">
-		<?php echo $html; ?>
+		<?php echo wp_kses_post( $html ); ?>
 	</div>
 </section>

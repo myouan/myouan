@@ -6,12 +6,7 @@
 			<div class="col-md-9">
 				<main id="main" role="main">
 					<?php
-					$layout = 'thumbnail';
-
-					if ( class_exists( 'SCF' ) && SCF::get_option_meta( 'theme-option', 'archive-page-layout' ) ) {
-						$layout = SCF::get_option_meta( 'theme-option', 'archive-page-layout' );
-					}
-
+					$layout = get_theme_mod( 'archive-page-layout' );
 					get_template_part( 'templates/entries/' . $layout );
 					?>
 

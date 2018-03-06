@@ -209,11 +209,6 @@ add_filter( 'get_calendar', 'wpbook_get_calendar' );
 include_once( get_template_directory() . '/functions/register-sidebars.php' );
 
 /**
- * Registers custom post types
- */
-include_once( get_template_directory() . '/functions/register-post-types.php' );
-
-/**
  * Enqueues scripts and styles.
  */
 include_once( get_template_directory() . '/functions/enqueue-scripts.php' );

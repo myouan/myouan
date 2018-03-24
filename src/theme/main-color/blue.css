@@ -46,6 +46,6 @@ h4 { color: #466b83; }
 
 .p-entry-meta__item a { background-color: #466b83; color: white; }
 
-.p-widget__title { color: #466b83; border-bottom: 1px solid #c7c7c7; }
+.c-widget__title { color: #466b83; border-bottom: 1px solid #c7c7c7; }
 
-.p-widget__title:after { content: "."; line-height: 0; display: block; overflow: hidden; position: absolute; width: 30%; border-bottom: 2px solid #1477b5; }
+.c-widget__title:after { content: "."; line-height: 0; display: block; overflow: hidden; position: absolute; width: 30%; border-bottom: 2px solid #1477b5; }

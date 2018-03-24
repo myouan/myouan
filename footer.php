@@ -1,6 +1,6 @@
 	<footer id="footer" class="l-footer">
 		<?php if ( is_active_sidebar( 'footer' ) ) : ?>
-		<div class="widgets-footer">
+		<div class="l-footer-widget-area">
 			<div class="container">
 				<div class="row">
 					<?php dynamic_sidebar( 'footer' ); ?>

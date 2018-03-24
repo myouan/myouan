@@ -9,7 +9,7 @@
 					<div class="p-entries__body">
 						<?php the_excerpt(); ?>
 					</div>
-					<?php get_template_part( 'templates/entry-meta' ); ?>
+					<?php get_template_part( 'template-parts/entry-meta' ); ?>
 				</div>
 			</div>
 		</li>

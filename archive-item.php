@@ -13,7 +13,7 @@
 							<div class="row">
 								<?php while ( have_posts() ) : the_post(); ?>
 								<div class="col-md-4">
-									<?php get_template_part( 'templates/item' ); ?>
+									<?php get_template_part( 'template-parts/item' ); ?>
 								</div>
 								<?php endwhile; ?>
 							</div>
@@ -21,11 +21,11 @@
 
 					<?php elseif ( 'thumbnail-excerpt' === $layout ) : ?>
 
-						<?php get_template_part( 'templates/entries/excerpt' ); ?>
+						<?php get_template_part( 'template-parts/entries/excerpt' ); ?>
 
 					<?php endif; ?>
 
-					<?php get_template_part( 'templates/pagination' ); ?>
+					<?php get_template_part( 'template-parts/pagination' ); ?>
 				</main>
 			</div>
 			<div class="col-md-3">

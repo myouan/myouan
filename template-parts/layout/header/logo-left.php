@@ -1,8 +1,8 @@
 <header id="header" class="l-header l-header--logo-left">
-	<?php get_template_part( 'templates/header-nav' ); ?>
+	<?php get_template_part( 'template-parts/header-nav' ); ?>
 
 	<div class="container">
-		<?php get_template_part( 'templates/site-branding' ); ?>
+		<?php get_template_part( 'template-parts/site-branding' ); ?>
 
 		<?php $site_description = get_bloginfo( 'description' ); ?>
 		<?php if ( $site_description ) : ?>
@@ -27,10 +27,10 @@
 	<?php if ( has_nav_menu( 'global-nav' ) ) : ?>
 	<nav class="p-global-nav hidden-xs hidden-sm" role="navigation">
 		<div class="container">
-			<?php get_template_part( 'templates/global-nav' ); ?>
+			<?php get_template_part( 'template-parts/global-nav' ); ?>
 		</div>
 	</nav>
 	<?php endif; ?>
 
-	<?php get_template_part( 'templates/mobile-nav' ); ?>
+	<?php get_template_part( 'template-parts/mobile-nav' ); ?>
 </header>

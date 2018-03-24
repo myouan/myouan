@@ -7,14 +7,14 @@
 
 <div id="contents" class="l-contents">
 	<main id="main" role="main">
-		<?php get_template_part( 'templates/main-visual' ); ?>
-		<?php get_template_part( 'templates/front-page-widget-area--top' ); ?>
-		<?php get_template_part( 'templates/recent-items-masonry' ); ?>
-		<?php get_template_part( 'templates/feature' ); ?>
-		<?php get_template_part( 'templates/recent-posts-list--exclude-faq' ); ?>
-		<?php get_template_part( 'templates/recent-faq' ); ?>
-		<?php get_template_part( 'templates/front-page-widget-area--bottom' ); ?>
-		<?php get_template_part( 'templates/social-nav' ); ?>
+		<?php get_template_part( 'template-parts/main-visual' ); ?>
+		<?php get_template_part( 'template-parts/front-page-widget-area--top' ); ?>
+		<?php get_template_part( 'template-parts/recent-items-masonry' ); ?>
+		<?php get_template_part( 'template-parts/feature' ); ?>
+		<?php get_template_part( 'template-parts/recent-posts-list--exclude-faq' ); ?>
+		<?php get_template_part( 'template-parts/recent-faq' ); ?>
+		<?php get_template_part( 'template-parts/front-page-widget-area--bottom' ); ?>
+		<?php get_template_part( 'template-parts/social-nav' ); ?>
 	</main>
 </div>
 

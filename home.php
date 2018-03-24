@@ -7,10 +7,10 @@
 				<main id="main" role="main">
 					<?php
 					$layout = get_theme_mod( 'archive-page-layout' );
-					get_template_part( 'templates/entries/' . $layout );
+					get_template_part( 'template-parts/entries/' . $layout );
 					?>
 
-					<?php get_template_part( 'templates/pagination' ); ?>
+					<?php get_template_part( 'template-parts/pagination' ); ?>
 				</main>
 			</div>
 			<div class="col-md-3">

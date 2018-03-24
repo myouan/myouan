@@ -13,7 +13,7 @@ if ( ! $posts_item ) {
 		<div class="row">
 			<?php foreach ( $posts_item as $post ) :setup_postdata( $post ); ?>
 			<div class="col-md-3">
-				<?php get_template_part( 'templates/item' ); ?>
+				<?php get_template_part( 'template-parts/item' ); ?>
 			</div>
 			<?php endforeach; wp_reset_postdata(); ?>
 		</div>

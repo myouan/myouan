@@ -9,4 +9,4 @@
 <body <?php body_class(); ?>>
 <div id="container" class="l-container">
 	<?php
-	get_template_part( 'templates/layout/header/' . get_theme_mod( 'header-layout-type' ) );
+	get_template_part( 'template-parts/layout/header/' . get_theme_mod( 'header-layout-type' ) );

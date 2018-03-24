@@ -7,13 +7,13 @@
 
 <div id="contents" class="l-contents">
 	<main id="main" role="main">
-		<?php get_template_part( 'templates/main-visual' ); ?>
-		<?php get_template_part( 'templates/front-page-widget-area--top' ); ?>
-		<?php get_template_part( 'templates/3points' ); ?>
-		<?php get_template_part( 'templates/recent-news-masonry' ); ?>
-		<?php get_template_part( 'templates/recent-items' ); ?>
-		<?php get_template_part( 'templates/front-page-widget-area--bottom' ); ?>
-		<?php get_template_part( 'templates/social-nav' ); ?>
+		<?php get_template_part( 'template-parts/main-visual' ); ?>
+		<?php get_template_part( 'template-parts/front-page-widget-area--top' ); ?>
+		<?php get_template_part( 'template-parts/3points' ); ?>
+		<?php get_template_part( 'template-parts/recent-news-masonry' ); ?>
+		<?php get_template_part( 'template-parts/recent-items' ); ?>
+		<?php get_template_part( 'template-parts/front-page-widget-area--bottom' ); ?>
+		<?php get_template_part( 'template-parts/social-nav' ); ?>
 	</main>
 </div>
 

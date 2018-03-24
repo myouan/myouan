@@ -9,7 +9,7 @@
 
 						<?php
 						$layout = get_theme_mod( 'archive-page-layout' );
-						get_template_part( 'templates/entries/' . $layout );
+						get_template_part( 'template-parts/entries/' . $layout );
 						?>
 
 					<?php else : ?>

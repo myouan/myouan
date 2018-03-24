@@ -12,11 +12,11 @@ include_once( get_template_directory() . '/functions/template-tags.php' );
  * Loads customizer
  */
 $includes = [
-	'/inc/customizer/*',
-	'/inc/customizer/*/sections',
-	'/inc/customizer/*/sections/*',
-	'/inc/customizer/*/sections/*/controls',
-	'/inc/customizer/*/controls',
+	'/functions/customizer/*',
+	'/functions/customizer/*/sections',
+	'/functions/customizer/*/sections/*',
+	'/functions/customizer/*/sections/*/controls',
+	'/functions/customizer/*/controls',
 ];
 foreach ( $includes as $include ) {
 	foreach ( glob( __DIR__ . $include . '/*.php' ) as $file ) {

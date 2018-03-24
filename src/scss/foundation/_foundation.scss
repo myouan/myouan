@@ -46,3 +46,8 @@ p, ul, ol, dl, table {
 .input-group {
   z-index: 0;
 }
+
+.smart-cf-upload-image,
+.smart-cf-upload-file {
+  max-width: 500px;
+}

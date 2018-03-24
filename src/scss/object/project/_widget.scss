@@ -1,6 +1,10 @@
 .p-widget {
   &__title {
-    margin: 0;
+    margin: 10px 0 15px;
     @include wpbook-font-size-line-height($wpbook-base-font-size + 2);
+  }
+
+  &--sidebar {
+    margin-bottom: 30px;
   }
 }

@@ -2,6 +2,6 @@
   &__title {
     margin: 0;
     @include wpbook-font-size-line-height($wpbook-base-font-size * 1.5);
-    padding: 0;
+    padding: 14px 0 8px;
   }
 }

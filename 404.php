@@ -8,9 +8,9 @@
 			<div class="col-md-9">
 				<main id="main" role="main">
 					<p>
-						<?php esc_html_e( 'ページが見つかりませんでした。', 'wpbook' ); ?><br />
-						<?php esc_html_e( 'お探しのページが移動したか削除されています。', 'wpbook' ); ?><br />
-						<?php esc_html_e( 'この検索ボックスから検索してください。', 'wpbook' ); ?><br />
+						<?php esc_html_e( 'ページが見つかりませんでした。', 'myouan' ); ?><br />
+						<?php esc_html_e( 'お探しのページが移動したか削除されています。', 'myouan' ); ?><br />
+						<?php esc_html_e( 'この検索ボックスから検索してください。', 'myouan' ); ?><br />
 					</p>
 
 					<?php get_search_form(); ?>

@@ -8,8 +8,8 @@ $customizer->control( 'select', 'base-font', [
 	'label'   => __( '基本フォント', 'snow-monkey' ),
 	'default' => 'sans-serif',
 	'choices' => [
-		'sans-serif' => __( 'ゴシック', 'wpbook' ),
-		'serif'      => __( '明朝', 'wpbook' ),
+		'sans-serif' => __( 'ゴシック', 'myouan' ),
+		'serif'      => __( '明朝', 'myouan' ),
 	],
 ] );
 

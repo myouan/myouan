@@ -4,7 +4,7 @@
  *
  * @return array
  */
-function wpbook_get_3points() {
+function myouan_get_3points() {
 	$points = array();
 
 	for ( $i = 1; $i <= 3; $i ++ ) {
@@ -44,7 +44,7 @@ function wpbook_get_3points() {
  *
  * @param string
  */
-function wpbook_get_base_font_stylsheet() {
+function myouan_get_base_font_stylsheet() {
 	if ( 'serif' === get_theme_mod( 'base-font' ) ) {
 		return get_template_directory_uri() . '/assets/theme/theme-option/base-font/serif.css';
 	} else {
@@ -57,7 +57,7 @@ function wpbook_get_base_font_stylsheet() {
  *
  * @param string
  */
-function wpbook_get_heading_font_stylsheet() {
+function myouan_get_heading_font_stylsheet() {
 	if ( 'serif' === get_theme_mod( 'heading-font' ) ) {
 		return get_template_directory_uri() . '/assets/theme/theme-option/heading-font/serif.css';
 	} else {

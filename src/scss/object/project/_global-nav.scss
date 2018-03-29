@@ -1,5 +1,5 @@
 .p-global-nav {
-  @include wpbook-font-size-line-height($wpbook-base-font-size - 2);
+  @include myouan-font-size-line-height($myouan-base-font-size - 2);
 
   .menu-item {
     position: relative;
@@ -11,7 +11,7 @@
       text-decoration: none;
     }
 
-    @include wpbook-hover() {
+    @include myouan-hover() {
       > .sub-menu {
         visibility: visible;
         opacity: 1;
@@ -47,7 +47,7 @@
 
     > .menu-item {
       > a {
-        padding: ($wpbook-base-line-height / 2) $wpbook-base-line-height;
+        padding: ($myouan-base-line-height / 2) $myouan-base-line-height;
         background-color: #333;
         color: #fff;
       }

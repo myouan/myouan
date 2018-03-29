@@ -3,7 +3,7 @@ use Inc2734\WP_Customizer_Framework\Customizer_Framework;
 
 $customizer = Customizer_Framework::init();
 $customizer->section( 'header-btn', [
-	'title'           => __( 'ヘッダーボタン', 'wpbook' ),
+	'title'           => __( 'ヘッダーボタン', 'myouan' ),
 	'active_callback' => function() {
 		return 'logo-left' === get_theme_mod( 'header-layout-type' );
 	}

@@ -24,7 +24,7 @@ if ( ! class_exists( 'SCF' ) ) {
 
 				<?php if ( SCF::get( 'url' ) ) : ?>
 				<div class="p-item-cta__cart">
-					<a class="btn btn-primary btn-block" href="<?php echo SCF::get( 'url' ); ?>"><?php esc_html_e( 'この商品を購入する', 'wpbook' ); ?></a>
+					<a class="btn btn-primary btn-block" href="<?php echo SCF::get( 'url' ); ?>"><?php esc_html_e( 'この商品を購入する', 'myouan' ); ?></a>
 				</div>
 				<?php endif; ?>
 			</div>

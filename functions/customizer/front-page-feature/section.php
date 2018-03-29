@@ -3,7 +3,7 @@ use Inc2734\WP_Customizer_Framework\Customizer_Framework;
 
 $customizer = Customizer_Framework::init();
 $customizer->section( 'front-page-feature', [
-	'title'           => __( 'おすすめ', 'wpbook' ),
+	'title'           => __( 'おすすめ', 'myouan' ),
 	'active_callback' => function() {
 		if ( ! is_front_page() || is_home() ) {
 			return false;
@@ -25,14 +25,14 @@ $customizer->section( 'front-page-feature', [
 $section = $customizer->get_section( 'front-page-feature' );
 
 $customizer->control( 'image', 'front-page-feature-image', [
-	'label' => __( '画像', 'wpbook' ),
+	'label' => __( '画像', 'myouan' ),
 ] );
 
 $control = $customizer->get_control( 'front-page-feature-image' );
 $control->join( $section );
 
 $customizer->control( 'textarea', 'front-page-feature-html', [
-	'label' => __( 'HTML', 'wpbook' ),
+	'label' => __( 'HTML', 'myouan' ),
 ] );
 
 $control = $customizer->get_control( 'front-page-feature-html' );

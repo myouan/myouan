@@ -18,39 +18,39 @@ function register_fields_for_item( $settings, $type, $id, $meta_type ) {
 		return $settings;
 	}
 
-	$Setting = SCF::add_setting( 'item-setting', __( '商品設定', 'wpbook' ) );
+	$Setting = SCF::add_setting( 'item-setting', __( '商品設定', 'myouan' ) );
 	$Setting->add_group( 'group-subcopy', false, array(
 		array(
 			'name'  => 'subcopy',
-			'label' => __( 'サブコピー', 'wpbook' ),
+			'label' => __( 'サブコピー', 'myouan' ),
 			'type'  => 'text',
 		),
 	) );
 	$Setting->add_group( 'group-price', false, array(
 		array(
 			'name'  => 'price',
-			'label' => __( '価格', 'wpbook' ),
+			'label' => __( '価格', 'myouan' ),
 			'type'  => 'text',
 		),
 	) );
 	$Setting->add_group( 'group-url', false, array(
 		array(
 			'name'  => 'url',
-			'label' => __( 'カートURL', 'wpbook' ),
+			'label' => __( 'カートURL', 'myouan' ),
 			'type'  => 'text',
 		),
 	) );
 	$Setting->add_group( 'group-item-description', false, array(
 		array(
 			'name'  => 'item-description',
-			'label' => __( '商品説明', 'wpbook' ),
+			'label' => __( '商品説明', 'myouan' ),
 			'type'  => 'textarea',
 		),
 	) );
 	$Setting->add_group( 'group-main-visual', false, array(
 		array(
 			'name'  => 'main-visual',
-			'label' => __( 'メインビジュアル', 'wpbook' ),
+			'label' => __( 'メインビジュアル', 'myouan' ),
 			'type'  => 'image',
 			'size'  => 'medium',
 		),
@@ -75,18 +75,18 @@ function register_fields_for_post_and_news( $settings, $type, $id, $meta_type ) 
 		return $settings;
 	}
 
-	$Setting = SCF::add_setting( 'item-setting', __( '商品設定', 'wpbook' ) );
+	$Setting = SCF::add_setting( 'item-setting', __( '商品設定', 'myouan' ) );
 	$Setting->add_group( 'group-subcopy', false, array(
 		array(
 			'name'  => 'subcopy',
-			'label' => __( 'サブコピー', 'wpbook' ),
+			'label' => __( 'サブコピー', 'myouan' ),
 			'type'  => 'text',
 		),
 	) );
 	$Setting->add_group( 'group-main-visual', false, array(
 		array(
 			'name'  => 'main-visual',
-			'label' => __( 'メインビジュアル', 'wpbook' ),
+			'label' => __( 'メインビジュアル', 'myouan' ),
 			'type'  => 'image',
 			'size'  => 'medium',
 		),

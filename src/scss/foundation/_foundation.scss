@@ -1,7 +1,7 @@
 body {
-  color: $wpbook-color-text;
-  font-size: $wpbook-base-font-size;
-  line-height: wpbook-strip-unit($wpbook-base-line-height / $wpbook-base-font-size);
+  color: $myouan-color-text;
+  font-size: $myouan-base-font-size;
+  line-height: myouan-strip-unit($myouan-base-line-height / $myouan-base-font-size);
 }
 
 img {
@@ -11,36 +11,36 @@ img {
 
 h1 {
   margin-top: 0;
-  margin-bottom: $wpbook-base-line-height;
-  @include wpbook-font-size-line-height($wpbook-base-font-size);
+  margin-bottom: $myouan-base-line-height;
+  @include myouan-font-size-line-height($myouan-base-font-size);
 }
 
 h2 {
-  margin-top: ($wpbook-base-line-height * 2);
-  margin-bottom: $wpbook-base-line-height;
-  @include wpbook-font-size-line-height($wpbook-base-font-size * 2.5);
+  margin-top: ($myouan-base-line-height * 2);
+  margin-bottom: $myouan-base-line-height;
+  @include myouan-font-size-line-height($myouan-base-font-size * 2.5);
 }
 
 h3 {
-  margin-top: ($wpbook-base-line-height * 2);
-  margin-bottom: $wpbook-base-line-height;
-  @include wpbook-font-size-line-height($wpbook-base-font-size * 2);
+  margin-top: ($myouan-base-line-height * 2);
+  margin-bottom: $myouan-base-line-height;
+  @include myouan-font-size-line-height($myouan-base-font-size * 2);
 }
 
 h4 {
-  margin-top: ($wpbook-base-line-height * 2);
-  margin-bottom: $wpbook-base-line-height;
-  @include wpbook-font-size-line-height($wpbook-base-font-size * 1.5);
+  margin-top: ($myouan-base-line-height * 2);
+  margin-bottom: $myouan-base-line-height;
+  @include myouan-font-size-line-height($myouan-base-font-size * 1.5);
 }
 
 h5, h6 {
-  margin-top: $wpbook-base-line-height;
+  margin-top: $myouan-base-line-height;
   margin-bottom: 0;
-  @include wpbook-font-size-line-height($wpbook-base-font-size);
+  @include myouan-font-size-line-height($myouan-base-font-size);
 }
 
 p, ul, ol, dl, table {
-  margin-bottom: $wpbook-base-line-height;
+  margin-bottom: $myouan-base-line-height;
 }
 
 .input-group {

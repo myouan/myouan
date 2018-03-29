@@ -3,7 +3,7 @@ use Inc2734\WP_Customizer_Framework\Customizer_Framework;
 
 $customizer = Customizer_Framework::init();
 $customizer->section( 'front-page-gallery', [
-	'title'           => __( 'ギャラリー', 'wpbook' ),
+	'title'           => __( 'ギャラリー', 'myouan' ),
 	'active_callback' => function() {
 		if ( ! is_front_page() || is_home() ) {
 			return false;
@@ -22,7 +22,7 @@ $section = $customizer->get_section( 'front-page-gallery' );
 
 for ( $i = 1; $i <= 4; $i ++ ) {
 	$customizer->control( 'image', 'front-page-gallery-' . $i, [
-		'label' => __( '画像', 'wpbook' ),
+		'label' => __( '画像', 'myouan' ),
 	] );
 
 	$control = $customizer->get_control( 'front-page-gallery-' . $i );

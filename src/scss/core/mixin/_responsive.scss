@@ -3,8 +3,8 @@
 //
 // @param  length  $min  width
 //
-@mixin wpbook-bp-min($min) {
-  @if ($min == $wpbook-bp-sm-min) {
+@mixin myouan-bp-min($min) {
+  @if ($min == $myouan-bp-sm-min) {
     @content;
   } @else {
     @media (min-width: $min) {
@@ -18,44 +18,44 @@
 //
 // @param  length  $max  width
 //
-@mixin wpbook-bp-max($max) {
+@mixin myouan-bp-max($max) {
   @media (max-width: $max) {
     @content;
   }
 }
 
 //
-// Return $wpbook-bp-sm-min media query
+// Return $myouan-bp-sm-min media query
 //
-@mixin wpbook-bp-sm-min() {
-  @include wpbook-bp-min($wpbook-bp-sm-min) {
+@mixin myouan-bp-sm-min() {
+  @include myouan-bp-min($myouan-bp-sm-min) {
     @content;
   }
 }
 
 //
-// Return $wpbook-bp-sm-max media query
+// Return $myouan-bp-sm-max media query
 //
-@mixin wpbook-bp-sm-max() {
-  @include wpbook-bp-min($wpbook-bp-sm-max) {
+@mixin myouan-bp-sm-max() {
+  @include myouan-bp-min($myouan-bp-sm-max) {
     @content;
   }
 }
 
 //
-// Return $wpbook-bp-md-min media query
+// Return $myouan-bp-md-min media query
 //
-@mixin wpbook-bp-md-min() {
-  @include wpbook-bp-min($wpbook-bp-md-min) {
+@mixin myouan-bp-md-min() {
+  @include myouan-bp-min($myouan-bp-md-min) {
     @content;
   }
 }
 
 //
-// Return $wpbook-bp-md-max media query
+// Return $myouan-bp-md-max media query
 //
-@mixin wpbook-bp-md-max() {
-  @include wpbook-bp-min($wpbook-bp-md-max) {
+@mixin myouan-bp-md-max() {
+  @include myouan-bp-min($myouan-bp-md-max) {
     @content;
   }
 }
@@ -63,8 +63,8 @@
 //
 // Return media query for smartphone size
 //
-@mixin wpbook-bp-xs-only() {
-  @include wpbook-bp-max($wpbook-bp-xs-max) {
+@mixin myouan-bp-xs-only() {
+  @include myouan-bp-max($myouan-bp-xs-max) {
     @content;
   }
 }
@@ -72,8 +72,8 @@
 //
 // Return media query for tablet size
 //
-@mixin wpbook-bp-sm-only() {
-  @media (min-width: $wpbook-bp-sm-min) and (max-width: $wpbook-bp-sm-max) {
+@mixin myouan-bp-sm-only() {
+  @media (min-width: $myouan-bp-sm-min) and (max-width: $myouan-bp-sm-max) {
     @content;
   }
 }
@@ -81,8 +81,8 @@
 //
 // Return media query for pc size
 //
-@mixin wpbook-bp-md-only() {
-  @media (min-width: $wpbook-bp-md-min) and (max-width: $wpbook-bp-md-max) {
+@mixin myouan-bp-md-only() {
+  @media (min-width: $myouan-bp-md-min) and (max-width: $myouan-bp-md-max) {
     @content;
   }
 }
@@ -92,8 +92,8 @@
 //
 // @return  string  media query
 //
-@mixin wpbook-bp-lg-only() {
-  @include wpbook-bp-min($wpbook-bp-lg-min) {
+@mixin myouan-bp-lg-only() {
+  @include myouan-bp-min($myouan-bp-lg-min) {
     @content;
   }
 }

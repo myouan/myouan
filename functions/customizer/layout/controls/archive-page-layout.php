@@ -5,12 +5,12 @@ $customizer = Customizer_Framework::init();
 $section    = $customizer->get_section( 'layout' );
 
 $customizer->control( 'select', 'archive-page-layout', [
-	'label'   => __( 'ブログ・お知らせアーカイブレイアウト', 'wpbook' ),
+	'label'   => __( 'ブログ・お知らせアーカイブレイアウト', 'myouan' ),
 	'default' => 'thumbnail',
 	'choices' => array(
-		'thumbnail'    => __( 'サムネイルあり', 'wpbook' ),
-		'no-thumbnail' => __( 'サムネイルなし', 'wpbook' ),
-		'only-title'   => __( 'タイトルのみ', 'wpbook' ),
+		'thumbnail'    => __( 'サムネイルあり', 'myouan' ),
+		'no-thumbnail' => __( 'サムネイルなし', 'myouan' ),
+		'only-title'   => __( 'タイトルのみ', 'myouan' ),
 	),
 ] );
 

@@ -4,6 +4,6 @@
 // @param   length  $value  numeric value
 // @return  int
 //
-@function wpbook-strip-unit($value) {
+@function myouan-strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }

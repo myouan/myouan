@@ -1,20 +1,20 @@
 .p-recent-posts-list {
   > .container {
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       display: table;
       table-layout: fixed;
     }
   }
 
   &__item {
-    margin-bottom: $wpbook-base-line-height;
+    margin-bottom: $myouan-base-line-height;
     line-height: 1.4;
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       display: table-cell;
       width: 100%;
       padding: 0 15px;

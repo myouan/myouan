@@ -1,7 +1,7 @@
 .c-widget {
   &__title {
     margin: 10px 0 15px;
-    @include wpbook-font-size-line-height($wpbook-base-font-size + 2);
+    @include myouan-font-size-line-height($myouan-base-font-size + 2);
   }
 
   &--sidebar {

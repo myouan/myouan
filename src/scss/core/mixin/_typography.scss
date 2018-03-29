@@ -3,8 +3,8 @@
 //
 // @param px $font-size
 //
-@mixin wpbook-line-height($font-size) {
-  line-height: wpbook-vertical-rhythm($font-size) / wpbook-strip-unit($font-size);
+@mixin myouan-line-height($font-size) {
+  line-height: myouan-vertical-rhythm($font-size) / myouan-strip-unit($font-size);
 }
 
 //
@@ -12,7 +12,7 @@
 //
 // @param px $font-size
 //
-@mixin wpbook-font-size($font-size) {
+@mixin myouan-font-size($font-size) {
   font-size: $font-size;
 }
 
@@ -21,7 +21,7 @@
 //
 // @param px $font-size
 //
-@mixin wpbook-font-size-line-height($font-size) {
-  @include wpbook-font-size($font-size);
-  @include wpbook-line-height($font-size);
+@mixin myouan-font-size-line-height($font-size) {
+  @include myouan-font-size($font-size);
+  @include myouan-line-height($font-size);
 }

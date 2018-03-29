@@ -1,15 +1,15 @@
 .p-content {
-  margin: 0 0 $wpbook-base-line-height;
+  margin: 0 0 $myouan-base-line-height;
 
   &__subcopy {
-    margin: 0 0 ($wpbook-base-line-height / 2);
+    margin: 0 0 ($myouan-base-line-height / 2);
     background-color: #eee;
-    padding: $wpbook-base-font-size;
+    padding: $myouan-base-font-size;
   }
 
   &__entry-meta {
-    margin: 0 0 $wpbook-base-line-height;
-    padding: $wpbook-base-font-size 0 0;
+    margin: 0 0 $myouan-base-line-height;
+    padding: $myouan-base-font-size 0 0;
 
     a {
       font-size: 12px;
@@ -20,19 +20,19 @@
       margin-right: 4px;
       line-height: 1.1;
       background-color: #eee;
-      color: $wpbook-color-text;
+      color: $myouan-color-text;
     }
   }
 
   &__title {
-    @include wpbook-font-size-line-height($wpbook-base-font-size * 2);
-    margin: 0 0 $wpbook-base-font-size;
+    @include myouan-font-size-line-height($myouan-base-font-size * 2);
+    margin: 0 0 $myouan-base-font-size;
   }
 
   &__excerpt {
-    margin: 0 0 $wpbook-base-line-height;
+    margin: 0 0 $myouan-base-line-height;
     background-color: #eee;
-    padding: $wpbook-base-font-size;
+    padding: $myouan-base-font-size;
 
     > :last-child {
       margin-bottom: 0;

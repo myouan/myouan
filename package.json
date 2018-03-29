@@ -1,7 +1,5 @@
 {
-  "name": "wp-book",
-  "version": "1.0.0",
-  "author": "inc2734",
+  "author": "sotechsha",
   "license": "GPLv2",
   "browserify-shim": {
     "jquery": "global:jQuery",

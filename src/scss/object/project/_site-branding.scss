@@ -1,7 +1,7 @@
 .p-site-branding {
   &__title {
     margin: 0;
-    @include wpbook-font-size-line-height($wpbook-base-font-size * 1.5);
+    @include myouan-font-size-line-height($myouan-base-font-size * 1.5);
     padding: 14px 0 8px;
   }
 }

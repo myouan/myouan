@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       display: table;
       table-layout: fixed;
       width: 100%;
@@ -24,7 +24,7 @@
       padding-top: 75%;
     }
 
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       display: table-cell;
       width: 100%;
     }

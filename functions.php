@@ -25,16 +25,16 @@ foreach ( $includes as $include ) {
 	}
 }
 
-if ( ! function_exists( 'wpbook_setup' ) ) {
+if ( ! function_exists( 'myouan_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 */
-	function wpbook_setup() {
+	function myouan_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 */
-		load_theme_textdomain( 'wpbook', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'myouan', get_template_directory() . '/languages' );
 
 		/**
 		 *  Add default posts and comments RSS feed links to head.
@@ -67,11 +67,11 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 		 * This theme uses wp_nav_menu() in locations.
 		 */
 		register_nav_menus( array(
-			'global-nav' => __( 'グローバルメニュー（PC のみ）', 'wpbook' ),
-			'header-nav' => __( 'ヘッダーメニュー（PC のみ）', 'wpbook' ),
-			'footer-nav' => __( 'フッターメニュー（PC のみ）', 'wpbook' ),
-			'mobile-nav' => __( 'モバイル用メニュー（ロゴ下）', 'wpbook' ),
-			'social-nav' => __( 'ソーシャルアカウントメニュー', 'wpbook' ),
+			'global-nav' => __( 'グローバルメニュー（PC のみ）', 'myouan' ),
+			'header-nav' => __( 'ヘッダーメニュー（PC のみ）', 'myouan' ),
+			'footer-nav' => __( 'フッターメニュー（PC のみ）', 'myouan' ),
+			'mobile-nav' => __( 'モバイル用メニュー（ロゴ下）', 'myouan' ),
+			'social-nav' => __( 'ソーシャルアカウントメニュー', 'myouan' ),
 		) );
 
 		/*
@@ -89,17 +89,17 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 		/*
 		 * This theme styles the visual editor.
 		 */
-		function wpbook_add_editor_styles() {
+		function myouan_add_editor_styles() {
 			add_editor_style( array(
 				get_template_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css',
 				get_template_directory_uri() . '/assets/vendor/font-awesome/css/font-awesome.min.css',
 			) );
 
-			add_editor_style( wpbook_get_base_font_stylsheet() );
-			add_editor_style( wpbook_get_heading_font_stylsheet() );
+			add_editor_style( myouan_get_base_font_stylsheet() );
+			add_editor_style( myouan_get_heading_font_stylsheet() );
 			add_editor_style( './assets/css/editor-style.css' );
 		}
-		add_action( 'admin_init', 'wpbook_add_editor_styles' );
+		add_action( 'admin_init', 'myouan_add_editor_styles' );
 
 		/**
 		 *  Indicate widget sidebars can use selective refresh in the Customizer.
@@ -114,7 +114,7 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 		/**
 		 * Register the required plugins for this theme.
 		 */
-		function wpbook_register_required_plugins() {
+		function myouan_register_required_plugins() {
 			$plugins = array(
 				array(
 					'name'     => 'Smart Custom Fields',
@@ -154,17 +154,17 @@ if ( ! function_exists( 'wpbook_setup' ) ) {
 			);
 
 			$config = array(
-				'id'           => 'wpbook',
+				'id'           => 'myouan',
 				'has_notices'  => true,
 				'dismissable'  => true,
 				'is_automatic' => true,
 			);
 			tgmpa( $plugins, $config );
 		}
-		add_action( 'tgmpa_register', 'wpbook_register_required_plugins' );
+		add_action( 'tgmpa_register', 'myouan_register_required_plugins' );
 	}
 }
-add_action( 'after_setup_theme', 'wpbook_setup' );
+add_action( 'after_setup_theme', 'myouan_setup' );
 
 /**
  * Sets the content width in pixels, based on the theme's design and stylesheet.
@@ -172,10 +172,10 @@ add_action( 'after_setup_theme', 'wpbook_setup' );
  *
  * @global int $content_width
  */
-function wpbook_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'wpbook_content_width', 1140 );
+function myouan_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'myouan_content_width', 1140 );
 }
-add_action( 'after_setup_theme', 'wpbook_content_width', 0 );
+add_action( 'after_setup_theme', 'myouan_content_width', 0 );
 
 /**
  * Output hentry class  when the single page only
@@ -183,14 +183,14 @@ add_action( 'after_setup_theme', 'wpbook_content_width', 0 );
  * @param array $classes
  * @return array
  */
-function wpbook_post_class( $classes ) {
-	$allow_hentry_post_types = apply_filters( 'wpbook_allow_hentry_post_types', array( 'post' ) );
+function myouan_post_class( $classes ) {
+	$allow_hentry_post_types = apply_filters( 'myouan_allow_hentry_post_types', array( 'post' ) );
 	if ( ! in_array( get_post_type(), $allow_hentry_post_types ) ) {
 		$classes = array_diff( $classes, array( 'hentry' ) );
 	}
 	return $classes;
 }
-add_filter( 'post_class', 'wpbook_post_class' );
+add_filter( 'post_class', 'myouan_post_class' );
 
 /**
  * Calendar styling
@@ -198,10 +198,10 @@ add_filter( 'post_class', 'wpbook_post_class' );
  * @param string $calendar
  * @return string
  */
-function wpbook_get_calendar( $calendar ) {
+function myouan_get_calendar( $calendar ) {
 	return str_replace( '<table', '<table class="table"', $calendar );
 }
-add_filter( 'get_calendar', 'wpbook_get_calendar' );
+add_filter( 'get_calendar', 'myouan_get_calendar' );
 
 /**
  * Registers widget areas.

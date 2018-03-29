@@ -6,7 +6,7 @@
   }
 
   .menu-item {
-    margin: 0 0 ($wpbook-base-line-height / 2);
+    margin: 0 0 ($myouan-base-line-height / 2);
     padding: 0;
 
     &:last-child {
@@ -19,13 +19,13 @@
       border: 1px solid #2e6da4;
       border-radius: 4px;
       color: #fff;
-      @include wpbook-font-size-line-height($wpbook-base-font-size - 2);
-      padding: ($wpbook-base-font-size / 2) $wpbook-base-font-size;
+      @include myouan-font-size-line-height($myouan-base-font-size - 2);
+      padding: ($myouan-base-font-size / 2) $myouan-base-font-size;
       text-align: center;
       text-decoration: none;
       white-space: nowrap;
 
-      @include wpbook-hover() {
+      @include myouan-hover() {
         background-color: #286090;
         border-color: #204d74;
       }

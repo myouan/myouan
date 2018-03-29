@@ -1,15 +1,15 @@
 .p-3points {
   padding: 80px 0;
 
-  @include wpbook-bp-md-min() {
+  @include myouan-bp-md-min() {
     padding: 30px 0;
   }
 
   &__item {
-    margin-bottom: $wpbook-base-line-height;
+    margin-bottom: $myouan-base-line-height;
     padding: 1.8em;
 
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       margin-bottom: 0;
     }
   }
@@ -41,7 +41,7 @@
   }
 
   &__link {
-    margin-top: ($wpbook-base-line-height / 2);
+    margin-top: ($myouan-base-line-height / 2);
 
     .btn {
       width: 100%;
@@ -50,7 +50,7 @@
 
   &__description {
     line-height: 1.4;
-    font-size: ($wpbook-base-font-size - 1);
+    font-size: ($myouan-base-font-size - 1);
     margin: 1em 0;
   }
 }

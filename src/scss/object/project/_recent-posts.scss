@@ -1,8 +1,8 @@
 .p-recent-posts {
   &__title {
-    margin: 0 0 $wpbook-base-line-height;
-    border-bottom: 1px solid $wpbook-color-gray;
-    @include wpbook-font-size-line-height($wpbook-base-font-size + 2);
+    margin: 0 0 $myouan-base-line-height;
+    border-bottom: 1px solid $myouan-color-gray;
+    @include myouan-font-size-line-height($myouan-base-font-size + 2);
     padding: 0 0 8px;
   }
 
@@ -13,7 +13,7 @@
   }
 
   &__item {
-    margin: ($wpbook-base-line-height / 2) 0;
+    margin: ($myouan-base-line-height / 2) 0;
     padding: 0;
   }
 }

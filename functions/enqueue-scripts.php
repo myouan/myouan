@@ -1,5 +1,5 @@
 <?php
-function wpbook_wp_enqueue_scripts() {
+function myouan_wp_enqueue_scripts() {
 	$template_directory_uri = get_template_directory_uri();
 	$theme   = wp_get_theme();
 	$version = $theme->get( 'Version' );
@@ -19,14 +19,14 @@ function wpbook_wp_enqueue_scripts() {
 	);
 
 	wp_enqueue_style(
-		'wpbook-override',
+		'myouan-override',
 		$template_directory_uri . '/override.css',
 		array( get_template() ),
 		$version
 	);
 
 	wp_enqueue_style(
-		'wpbook-main-color-css',
+		'myouan-main-color-css',
 		$template_directory_uri . '/assets/theme/main-color/' . get_theme_mod( 'main-color' ) . '.css',
 		array( get_template() ),
 		$version
@@ -41,14 +41,14 @@ function wpbook_wp_enqueue_scripts() {
 
 	wp_enqueue_style(
 		get_template() . '-base-font',
-		wpbook_get_base_font_stylsheet(),
+		myouan_get_base_font_stylsheet(),
 		array( get_template() ),
 		$version
 	);
 
 	wp_enqueue_style(
 		get_template() . '-heading-font',
-		wpbook_get_heading_font_stylsheet(),
+		myouan_get_heading_font_stylsheet(),
 		array( get_template() ),
 		$version
 	);
@@ -94,4 +94,4 @@ function wpbook_wp_enqueue_scripts() {
 		'lt IE 9'
 	);
 }
-add_action( 'wp_enqueue_scripts', 'wpbook_wp_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'myouan_wp_enqueue_scripts' );

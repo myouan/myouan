@@ -14,7 +14,7 @@
 						<?php endif; ?>
 						<?php if ( !empty( $point['url'] ) ) : ?>
 						<div class="p-3points__link">
-							<a class="btn btn-primary" href="<?php echo esc_url( $point['url'] ); ?>"><?php esc_html_e( 'さらに詳しく', 'wpbook' ); ?></a>
+							<a class="btn btn-primary" href="<?php echo esc_url( $point['url'] ); ?>"><?php esc_html_e( 'さらに詳しく', 'myouan' ); ?></a>
 						</div>
 						<?php endif; ?>
 					</div>

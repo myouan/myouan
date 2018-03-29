@@ -1,9 +1,9 @@
 .c-media {
-  @include wpbook-clearfix();
+  @include myouan-clearfix();
 
   &__figure {
     float: left;
-    margin-right: $wpbook-base-font-size;
+    margin-right: $myouan-base-font-size;
     width: 25%;
     background-color: #eee;
     background-position: 50% 50%;

@@ -7,7 +7,7 @@
   @include header_shadow();
   transition: background-color .2s;
 
-  @include wpbook-bp-md-min() {
+  @include myouan-bp-md-min() {
     position: fixed;
     right: 0;
     left: 0;
@@ -19,7 +19,7 @@
   }
 
   .p-mobile-nav {
-    margin-bottom: $wpbook-base-line-height;
+    margin-bottom: $myouan-base-line-height;
   }
 
   &--overlay {
@@ -34,14 +34,14 @@
 
   &--logo-left {
     .p-site-branding {
-      padding: ($wpbook-base-line-height / 2) $wpbook-base-line-height ($wpbook-base-line-height / 2) 0;
+      padding: ($myouan-base-line-height / 2) $myouan-base-line-height ($myouan-base-line-height / 2) 0;
     }
 
     .p-site-action {
-      padding: ($wpbook-base-line-height / 2) 0 ($wpbook-base-line-height / 2) 0;
+      padding: ($myouan-base-line-height / 2) 0 ($myouan-base-line-height / 2) 0;
     }
 
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       > .container {
         display: table;
 
@@ -55,7 +55,7 @@
       }
 
       .p-site-action {
-        padding-left: $wpbook-base-line-height;
+        padding-left: $myouan-base-line-height;
       }
 
       .p-site-action {
@@ -66,17 +66,17 @@
 
   &--logo-center {
     .p-site-branding {
-      padding: ($wpbook-base-line-height / 2) 0;
+      padding: ($myouan-base-line-height / 2) 0;
       text-align: center;
     }
   }
 
   &--1row {
     .p-site-branding {
-      padding: ($wpbook-base-line-height / 2) 0;
+      padding: ($myouan-base-line-height / 2) 0;
     }
 
-    @include wpbook-bp-md-min() {
+    @include myouan-bp-md-min() {
       > .container {
         display: table;
 

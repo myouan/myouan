@@ -5,7 +5,7 @@
 	</a>
 	<?php if ( class_exists( 'SCF' ) && SCF::get( 'url' ) ) : ?>
 	<div class="c-item__cart">
-		<a class="btn btn-primary btn-block" href="<?php echo esc_url( SCF::get( 'url' ) ); ?>"><?php esc_html_e( 'この商品を購入する','wpbook' ); ?></a>
+		<a class="btn btn-primary btn-block" href="<?php echo esc_url( SCF::get( 'url' ) ); ?>"><?php esc_html_e( 'この商品を購入する','myouan' ); ?></a>
 	</div>
 	<?php endif; ?>
 </div>

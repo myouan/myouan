@@ -15,7 +15,7 @@
 	if ( $category_html ) {
 		printf(
 			'<li class="p-entry-meta__item">%1$s: %2$s</li>',
-			esc_html__( 'カテゴリー', 'wpbook' ),
+			esc_html__( 'カテゴリー', 'myouan' ),
 			implode( ', ', $category_html )
 		);
 	}
@@ -34,7 +34,7 @@
 	if ( $tags_html ) {
 		printf(
 			'<li class="p-entry-meta__item">%1$s: %2$s</li>',
-			esc_html__( 'タグ', 'wpbook' ),
+			esc_html__( 'タグ', 'myouan' ),
 			implode( ', ', $tags_html )
 		);
 	}

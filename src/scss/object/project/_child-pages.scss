@@ -1,39 +1,39 @@
 .p-child-pages {
-  @include wpbook-clearfix();
+  @include myouan-clearfix();
   list-style: none;
   margin: 0;
   padding: 0;
 
   &__item {
-    margin: $wpbook-base-line-height 0 0;
+    margin: $myouan-base-line-height 0 0;
     padding: 0;
 
     .c-media {
       min-width: 18em;
 
-      @include wpbook-bp-min(750px) {
+      @include myouan-bp-min(750px) {
         min-width: 720px;
       }
 
-      @include wpbook-bp-min(970px) {
+      @include myouan-bp-min(970px) {
         min-width: 330px;
       }
 
-      @include wpbook-bp-min(1170px) {
+      @include myouan-bp-min(1170px) {
         min-width: 408px;
       }
     }
   }
 
   &__title {
-    @include wpbook-font-size-line-height($wpbook-base-font-size + 2);
+    @include myouan-font-size-line-height($myouan-base-font-size + 2);
     font-weight: bold;
-    margin-bottom: ($wpbook-base-font-size / 2);
+    margin-bottom: ($myouan-base-font-size / 2);
   }
 
   &__excerpt {
-    margin-bottom: ($wpbook-base-font-size / 2);
-    @include wpbook-font-size($wpbook-base-font-size - 2);
+    margin-bottom: ($myouan-base-font-size / 2);
+    @include myouan-font-size($myouan-base-font-size - 2);
     line-height: 1.4;
 
     * {
@@ -41,7 +41,7 @@
     }
   }
 
-  @include wpbook-bp-md-min() {
+  @include myouan-bp-md-min() {
     margin-right: -15px;
     margin-left: -15px;
 

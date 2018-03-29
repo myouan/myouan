@@ -1,7 +1,7 @@
 .p-header-nav {
   background-color: #333;
-  @include wpbook-font-size-line-height($wpbook-base-font-size - 2);
-  padding: (($wpbook-base-font-size - 2) / 2) 0;
+  @include myouan-font-size-line-height($myouan-base-font-size - 2);
+  padding: (($myouan-base-font-size - 2) / 2) 0;
   text-align: center;
 
   .menu {
@@ -12,14 +12,14 @@
 
   .menu-item {
     display: inline-block;
-    margin: 0 $wpbook-base-font-size;
+    margin: 0 $myouan-base-font-size;
     padding: 0;
 
     a {
       color: #fff;
       text-decoration: none;
 
-      @include wpbook-hover() {
+      @include myouan-hover() {
         text-decoration: underline;
       }
     }

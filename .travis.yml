@@ -1,0 +1,58 @@
+sudo: false
+language: php
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+branches:
+  only:
+  - master
+  - develop
+  - "/\\d+\\.\\d+\\.\\d+?.*/"
+php:
+- 5.6
+- 7.1
+env:
+  global:
+  - GIT_COMMITTER_NAME=travis-ci
+  - GIT_COMMITTER_EMAIL=inc@2inc.org
+  - GIT_AUTHOR_NAME=travis-ci
+  - GIT_AUTHOR_EMAIL=inc@2inc.org
+  - WP_VERSION=latest WP_MULTISITE=0
+cache:
+  directories:
+  - node_modules
+  - vendor
+  - "$HOME/.composer/cache"
+install:
+- nvm install 6
+- npm install -g yarn
+- yarn install
+- npm rebuild node-sass
+- composer install
+before_install:
+- openssl aes-256-cbc -K $encrypted_b99941c4a519_key -iv $encrypted_b99941c4a519_iv
+  -in .travis/github_deploy_key.enc -out .travis/github_deploy_key -d
+- mv .travis/github_deploy_key ~/.ssh/id_rsa
+- chmod 600 ~/.ssh/id_rsa
+script:
+- ls -la style.css index.php vendor/autoload.php
+after_success:
+- pwd
+- ls -al
+before_deploy:
+- git clone -b master --quiet git@github.com:myouan/myouan.git release
+- cd release
+- yarn install
+- yarn run gulp zip
+- ls -la myouan.zip
+- export RELEASE_FILE=$(ls myouan.zip)
+deploy:
+  provider: releases
+  api_key:
+    secure: IVRe1ATKyKfSB6rYP/aA5aKitAEFGn+qpmVbJ2llSxAgNKRq0c/KLn/O2cnCp8Brv5GnqNzh/fzR1uV+dqox7W9fO5BgLorWEpcbIuanVILpWGTb8U6Y6SITk1TCSdI8jsKlDHmrPg1RnKEu82gEPofu/7K+GsYVR5+33sXXsziWW1uug9bvICiYfJyn193a1iKKfqCjCYdlYjFhyIl8TylD40q/al0cdk3vFy7UlOyrfVLxmuEgbEBueTUkG3J5cWP+8oPWiHPPYGUQaWjZQxBeYoYRLXnMc4dyzNG/k4lVhFp3uCC+SUA2U5yfhpBa7MxPAn/p/orr/EPu4oaVkt/b3/Z7qXm7DxmFehYFqMgoqsmx3HfDSBqtg2xE+i4Mmreld1hJqpZestDuhS1aKZyPRMUMl2nXrcwnt68xHi2WujcL9IV41baGtq0V3254rugkMRrGjp5jjvZ1YVmcHiDp/VqYN2SpjYXYXff59ge9iAyRiLr5HkkOzYDGkXG6FQIJI7IM1/XZNlg3FpQt+yj2DiTa0ChXpoo9pm33pdy1CT80HHPIagnpA3K/7+4jWNCvH+5X8iw2FiSOZZunkeT62zpDoCFJUuo6BER3xulgp42tx2C7GUFmecu6fszmHVknqUKk8b5JzD1elyNqfL1Fb0eQ4vp/UfucMXd6CNA=
+  file: "${RELEASE_FILE}"
+  skip_cleanup: true
+  on:
+    repo: myouan/myouan
+    tags: true

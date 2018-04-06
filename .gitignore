@@ -4,3 +4,7 @@ npm-debug.log
 node_modules/
 assets/
 vendor/
+.travis/github_deploy_key
+release/
+myouan.zip
+yarn-error.log

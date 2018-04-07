@@ -11,6 +11,7 @@ var source       = require('vinyl-source-stream');
 var browser_sync = require('browser-sync');
 var autoprefixer = require('autoprefixer');
 var rimraf       = require('rimraf');
+var zip          = require('gulp-zip');
 
 var dir = {
   src: {
@@ -89,6 +90,27 @@ gulp.task('browsersync', function() {
       dir.dist.css + 'style.min.css'
     ]
   });
+});
+
+gulp.task('zip', function(){
+  return gulp.src(
+      [
+        '**',
+        '!.git',
+        '!.travis',
+        '!node_modules',
+        '!node_modules/**',
+        '!.editorconfig',
+        '!.gitignore',
+        '!composer.json',
+        '!composer.lock',
+        '!gulpfile.js',
+        '!package.json',
+      ],
+      {base: './'}
+    )
+    .pipe(zip('myouan.zip'))
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', ['build', 'browsersync'], function() {
